@@ -2,23 +2,11 @@
 
 body {
     font-family: "Montserrat";
-    position: relative;
 }
-.on {
-    background-color: gray;
-    position: fixed;
-    z-index: 198;
-    opacity: 0.2;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-}
-.bGuard{
-    transition: 0.6s all;
+.bGuard {
 }
 .container {
-    max-width: 1800px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 .header {
@@ -36,18 +24,18 @@ body {
     }
 
     &__menu {
-        width: 1159px;
+        width: 859px;
     }
 
     &__phone {
         a {
-            display: flex;
+            display: none;
             align-items: center;
             // font
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 600;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 29px;
 
             color: white;
@@ -63,14 +51,14 @@ body {
 }
 
 .menu {
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 .menu-item {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 29px;
     color: white;
     // anim
@@ -100,7 +88,7 @@ body {
     animation-timing-function: ease-in-out;
     background-image: url("../img/main/Heading/bg.png");
     &__header {
-        margin-top: 233px;
+        margin-top: 113px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -109,16 +97,16 @@ body {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 700;
-                font-size: 56px;
-                line-height: 68px;
+                font-size: 40px;
+                line-height: 49px;
 
                 color: #ffffff;
             }
         }
 
         &_discription {
-            margin-top: 20px;
-            max-width: 892px;
+            margin-top: 40px;
+            max-width: 598px;
             p {
                 font-family: "Montserrat";
                 font-style: normal;
@@ -141,12 +129,12 @@ body {
                 display: inline-block;
                 background: #ffffff;
                 border: white 1px solid;
-                padding: 27px 37px;
+                padding: 20px 30px;
                 // font
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 29px;
                 color: #000000;
                 // anim
@@ -161,13 +149,13 @@ body {
 }
 // burger-menu start
 .burger__wrapper {
-    display: none;
+    display: block;
 }
 .burger-btn {
     z-index: 200;
     cursor: pointer;
-    position: absolute;
-    right: 10px;
+    position: fixed;
+    right: 30px;
     top: 85px;
     transform: translate(-50%, -50%);
 }
@@ -217,7 +205,6 @@ body {
     top: 0;
     width: 409px;
     height: 100%;
-    z-index: 199;
     text-align: center;
     padding-top: 145px;
     transition: all 0.4s;
@@ -242,7 +229,7 @@ body {
 .heading {
     font-family: "Montserrat";
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 68px;
     color: #1e1e1e;
 }
@@ -250,9 +237,9 @@ body {
 .btn {
     font-family: "Montserrat";
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    padding: 20px 30px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 17px;
 }
 
 .btn_black {
@@ -279,19 +266,21 @@ body {
 }
 
 .numbers__heading {
-    margin-bottom: 105px;
+    margin-bottom: 40px;
 }
 
 .slider {
     z-index: 0;
     width: 54%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-right: 130px;
+    margin-right: 55px;
 }
 
 .slider__inner {
+    height: 100%;
     display: flex;
     transition: all 0.5s ease;
 }
@@ -313,6 +302,8 @@ body {
 .slider__btn {
     cursor: pointer;
     transition: opacity 0.3s ease;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .slider__btn:hover {
@@ -320,7 +311,7 @@ body {
 }
 
 .slide__img {
-    height: 520px;
+    height: 340px;
     width: 975px;
 }
 
@@ -331,8 +322,10 @@ body {
 
 .slider__border {
     position: absolute;
-    top: -30px;
-    right: -50px;
+    top: -15px;
+    left: 40px;
+    right: -25px;
+    height: 300px;
     z-index: -1;
 }
 
@@ -372,19 +365,19 @@ body {
 .tabs__heading {
     font-family: "Montserrat";
     font-weight: 600;
-    font-size: 42px;
-    line-height: 51px;
+    font-size: 24px;
+    line-height: 29px;
     color: #1e1e1e;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .tabs__description {
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 161.4%;
     color: #1e1e1e;
-    margin-bottom: 72px;
+    margin-bottom: 24px;
 }
 
 .tabs__money {
@@ -393,19 +386,20 @@ body {
     font-size: 24px;
     line-height: 161.4%;
     color: #1e1e1e;
+    margin-bottom: 24px;
 }
 
 .tabs__money strong {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .tabs__box-btns {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 .tabs__box-btns > .btn:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 15px;
 }
 
 @keyframes anim {
@@ -521,14 +515,14 @@ body {
 //   slider finish
 // stocks start
 .stocks {
-    margin: 50px 0px 30px 0px;
+    margin: 30px 0px 30px 0px;
     &__header {
         h2 {
-            margin: 50px 0px;
+            margin: 30px 0px;
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 700;
-            font-size: 56px;
+            font-size: 42px;
             line-height: 68px;
 
             color: #1e1e1e;
@@ -536,14 +530,15 @@ body {
     }
     &__content {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 }
 .stocks-card {
     border: 1px solid #1e1d1d;
-    max-width: 890px;
-    padding: 56px 40px;
+    max-width: 100%;
+    padding: 60px 28px;
     margin-bottom: 20px;
     h2 {
         font-family: "Montserrat";
@@ -553,7 +548,6 @@ body {
         line-height: 44px;
 
         color: #1e1e1e;
-        margin-bottom: 36px;
     }
     p {
         font-family: "Montserrat";
@@ -572,13 +566,13 @@ body {
     &__header {
         margin-bottom: 50px;
         h2 {
-            font-family: "Montserrat";
+            font-family: 'Montserrat';
             font-style: normal;
             font-weight: 700;
-            font-size: 56px;
-            line-height: 68px;
-
-            color: #1e1e1e;
+            font-size: 36px;
+            line-height: 44px;
+            
+            color: #1E1E1E;
         }
     }
 
@@ -594,39 +588,39 @@ body {
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    padding: 60px 340px;
+    padding: 65px 140px;
     h2 {
-        font-family: "Montserrat";
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
         line-height: 44px;
-
-        color: #000000;
-        margin-bottom: 24px;
+        
+        color: #1E1E1E;
+        margin-bottom: 4px;
     }
     p {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
-        font-size: 36px;
+        font-size: 24px;
         line-height: 44px;
 
         color: #000000;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .redline {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .stars {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .comment,
     .date {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 161.4%;
         /* or 39px */
 
@@ -639,16 +633,16 @@ body {
 // review card finish
 .slick-next {
     position: absolute !important;
-    right: 46.9% !important;
+    right: 47.5% !important;
     bottom: 0px !important;
     background-image: url(/img/next.svg) !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: cover !important;
-    width: 56px !important;
-    height: 56px !important;
+    width: 26px !important;
+    height: 26px !important;
 
-    top: 96% !important;
+    top: 97.5% !important;
 
     &::before {
         display: none !important;
@@ -660,16 +654,16 @@ body {
 .slick-prev {
     z-index: 10;
     position: absolute !important;
-    left: 46.9% !important;
+    left: 47.5% !important;
     bottom: 0px !important;
     background-color: none !important;
     background-image: url(/img/prev.svg) !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: cover !important;
-    width: 56px !important;
-    height: 56px !important;
-    top: 96% !important;
+    width: 26px !important;
+    height: 26px !important;
+    top: 97.5% !important;
     &::before {
         display: none !important;
     }
@@ -678,7 +672,7 @@ body {
     }
 }
 .contacts {
-    margin-top: 280px;
+    margin-top: 180px;
     &__row {
         position: relative;
 
@@ -689,6 +683,10 @@ body {
 
         &_content {
             padding: 90px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
         }
 
         &_map {
@@ -697,20 +695,21 @@ body {
             bottom: -2px;
             iframe {
                 border: 0px;
-                width: 950px;
-                height: 730px;
+                width: 650px;
+                height: 620px;
             }
         }
     }
 
     &__content {
+    
         &_header {
             margin-bottom: 62px;
             h2 {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 700;
-                font-size: 56px;
+                font-size: 42px;
                 line-height: 68px;
 
                 color: #1e1e1e;
@@ -718,17 +717,19 @@ body {
         }
 
         &_adress {
-            margin-bottom: 53px;
+            margin-bottom: 26px;
             display: flex;
             align-items: center;
+           
             img {
-                margin-right: 25px;
+                margin-right: 15px;
             }
             a {
+                max-width: 387px; 
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 161.4%;
                 /* or 39px */
 
@@ -744,16 +745,17 @@ body {
 
         &_bron {
             display: flex;
-            align-items: center;
-            margin-bottom: 53px;
+        align-items: start;
+            flex-direction: column;
+            margin-bottom: 26px;
             img {
-                margin-right: 25px;
+                margin-right: 15px;
             }
             a {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 161.4%;
                 /* or 39px */
 
@@ -769,16 +771,18 @@ body {
 
         &_hostel {
             display: flex;
-            align-items: center;
-            margin-bottom: 53px;
+            align-items: start;
+            flex-direction: column;
+            
+            margin-bottom: 26px;
             img {
-                margin-right: 25px;
+                margin-right: 15px;
             }
             a {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 161.4%;
                 /* or 39px */
 
@@ -796,13 +800,13 @@ body {
             display: flex;
             align-items: center;
             img {
-                margin-right: 25px;
+                margin-right: 15px;
             }
             p {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 161.4%;
                 /* or 39px */
 
@@ -825,7 +829,7 @@ body {
     }
 
     &__list {
-        margin-left: 190px;
+        margin-left: 90px;
         width: 1300px;
         display: flex;
         justify-content: space-between;
@@ -837,7 +841,7 @@ body {
         &_item {
             display: flex;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             img {
                 margin-right: 20px;
             }
@@ -845,7 +849,7 @@ body {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 29px;
 
                 color: #ffffff;
@@ -860,13 +864,4 @@ body {
             }
         }
     }
-}
-@media (min-width: 1024px) and (max-width: 1190px) {
-    @import "_1440pxFixiframe";
-}
-@media (min-width: 1191px) and (max-width: 1439px) {
-    @import "_1440px";
-}
-@media (min-width: 1440px) and (max-width: 1800px) {
-    @import "_1600px";
 }
