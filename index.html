@@ -4,56 +4,372 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Мини-отель "Черномор"</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/zero.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- adaptive slider -->
+    <link rel="stylesheet" href="css/adaptive.css" />
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
   <body>
     <div class="main-page">
-      <div class="main-page__background">
-        <div class="main-page__background_slide-one">
-          <img src="img/bg.png" alt="" />
-        </div>
-        <div class="main-page__background_slide-two">
-          <img src="img/bg.png" alt="" />
-        </div>
-        <div class="main-page__background_slide-three">
-          <img src="img/bg.png" alt="" />
-        </div>
-      </div>
-
       <header class="header">
         <div class="container">
           <div class="header__row">
             <div class="header__logo">
               <div class="header__logo_img">
-                <img src="img/logo.svg" alt="" />
+                <a href="#"><img src="img/logo.svg" alt="" /></a>
               </div>
             </div>
             <div class="header__menu">
               <ul class="menu">
-                <li><a href="" class="menu-item">Номера и цены</a></li>
-                <li><a href="" class="menu-item">Акции</a></li>
-                <li><a href="" class="menu-item">Отзывы</a></li>
-                <li><a href="" class="menu-item">Контакты</a></li>
-                <li><a href="" class="menu-item">Правила бронирования</a></li>
-                <li><a href="" class="menu-item">Услуги</a></li>
+                <li><a href="#" class="menu-item">Номера и цены</a></li>
+                <li><a href="#" class="menu-item">Акции</a></li>
+                <li><a href="#" class="menu-item">Отзывы</a></li>
+                <li><a href="#" class="menu-item">Контакты</a></li>
+                <li><a href="#" class="menu-item">Правила бронирования</a></li>
+                <li><a href="#" class="menu-item">Услуги</a></li>
               </ul>
             </div>
             <div class="header__phone">
-              <a href="#"><img src="img/phoneicon.svg" alt="" />89394444411</a>
+              <a href="#"
+                ><img src="img/phoneicon.svg" alt="" />+7(939)444-44-11</a
+              >
+            </div>
+
+            <div class="burger__wrapper">
+              <div class="burger-btn" onclick="burgerBtn(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <div class="burger__menu">
+                <ul class="burger-list">
+                  <li>
+                    <a href="#" class="burger-menu-item">Номера и цены</a>
+                  </li>
+                  <li><a href="#" class="burger-menu-item">Акции</a></li>
+                  <li><a href="#" class="burger-menu-item">Отзывы</a></li>
+                  <li><a href="#" class="burger-menu-item">Контакты</a></li>
+                  <li>
+                    <a href="#" class="burger-menu-item"
+                      >Правила бронирования</a
+                    >
+                  </li>
+                  <li><a href="#" class="burger-menu-item">Услуги</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </header>
+      <div class="container">
+        <div class="main-page__header">
+          <div class="main-page__header_title">
+            <h1>МИНИ - ОТЕЛЬ «ЧЕРНОМОР»</h1>
+          </div>
+          <div class="main-page__header_discription">
+            <p>
+              Мини-отель «Черномор» находится в самом центре города-курорта
+              Сочи. До самого популярного пляжа 7 минут ходьбы. Вблизи отеля
+              множество круглосуточных развлечений для туристов и самая красивая
+              набережная черноморского побережья.
+            </p>
+          </div>
+          <div class="main-page__header_button">
+            <button>Забронировать номер</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slider -->
+
+    <div class="detailed-number">
+      <img class="detailed-number__close" src="/img/close.svg" alt="" />
+      <div class="detailed-number__wrapper">
+        <h2 class="detailed-number__heading">Название номера</h2>
+        <div class="detailed-number__line"></div>
+        <div class="detailed-number__money">
+          <p class="detailed-number__money-heading detailed-number__text">
+            Расценки по месяцам:
+          </p>
+          <div class="detailed-number__money-price">
+            <div class="detailed-number__text">Январь---</div>
+            <div class="detailed-number__text">Февраль---</div>
+            <div class="detailed-number__text">Март---</div>
+            <div class="detailed-number__text">Апрель---</div>
+            <div class="detailed-number__text">Май---</div>
+            <div class="detailed-number__text">Июнь---</div>
+            <div class="detailed-number__text">Июль---</div>
+            <div class="detailed-number__text">Август---</div>
+            <div class="detailed-number__text">Сентябрь---</div>
+            <div class="detailed-number__text">Октябрь---</div>
+            <div class="detailed-number__text">Ноябрь---</div>
+            <div class="detailed-number__text">Декабрь---</div>
+          </div>
+        </div>
+        <div class="detailed-number__description">
+          <p class="detailed-number__title detailed-number__text">
+            <img src="img/title.png" alt="" />О номере
+          </p>
+          <ul class="detailed-number__list">
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">Площать номера 18 квм</p>
+            </li>
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">
+                Двуспальная кровать и раскладное кресло
+              </p>
+            </li>
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">3 спальных места</p>
+            </li>
+          </ul>
+        </div>
+        <div class="detailed-number__description">
+          <p class="detailed-number__title detailed-number__text">
+            <img src="img/title.png" alt="" />В номере
+          </p>
+          <ul class="detailed-number__list">
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">настальная лампа</p>
+            </li>
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">настальная лампа</p>
+            </li>
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">настальная лампа</p>
+            </li>
+          </ul>
+        </div>
+        <div class="detailed-number__description">
+          <p class="detailed-number__title detailed-number__text">
+            <img src="img/title.png" alt="" />На этаже
+          </p>
+          <ul class="detailed-number__list">
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">настальная лампа</p>
+            </li>
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">настальная лампа</p>
+            </li>
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">настальная лампа</p>
+            </li>
+          </ul>
+        </div>
+        <div class="detailed-number__description">
+          <p class="detailed-number__title detailed-number__text">
+            <img src="img/title.png" alt="" />На территории
+          </p>
+          <ul class="detailed-number__list">
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">настальная лампа</p>
+            </li>
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">настальная лампа</p>
+            </li>
+            <li class="detailed-number__item">
+              <img src="img/exp.png" alt="" />
+              <p class="detailed-number__text">настальная лампа</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="gray-wrapper">
+      <div class="container">
+        <h2 class="heading numbers__heading">Номера и цены</h2>
+        <div class="numbers__wrapper">
+          <div class="slider">
+            <div class="slider__border">
+              <img src="img/background.png" alt="" />
+            </div>
+            <div class="slider__wrapper">
+              <div class="slider__inner">
+                <div class="slide__img">
+                  <img src="img/slider1.png" alt="" />
+                </div>
+                <div class="slide__img">
+                  <img src="img/slider2.png" alt="" />
+                </div>
+                <div class="slide__img">
+                  <img src="img/slider3.png" alt="" />
+                </div>
+                <div class="slide__img">
+                  <img src="img/slider4.png" alt="" />
+                </div>
+                <div class="slide__img">
+                  <img src="img/slider5.png" alt="" />
+                </div>
+                <div class="slide__img">
+                  <img src="img/slider6.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="box-btn">
+              <div class="box-btn__btns">
+                <img
+                  src="img/prev.svg"
+                  alt=""
+                  class="slider__btn slide__prev"
+                />
+                <img
+                  src="img/next.svg"
+                  alt=""
+                  class="slider__btn slide__next"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="tabs">
+            <div class="tab">
+              <h2 class="tabs__heading">
+                Трёхместный (Эконом-класс с двуспальной кроватью)
+              </h2>
+              <p class="tabs__description">
+                Трехместный номер комфорт-класса без с/у 18квм, двуспальная
+                кровать и кресло-кровать
+              </p>
+              <p class="tabs__money">От <strong>1290 р.</strong></p>
+            </div>
+            <div class="tab">
+              <h2 class="tabs__heading">
+                Двухместный (Комфорт-класс с двуспальной кроватью)
+              </h2>
+              <p class="tabs__description">
+                Двухместный стандартный номер с двуспальной кроватью 20квм,
+                двуспальная кровать (с/у в номере)
+              </p>
+              <p class="tabs__money">От <strong>1690 р.</strong></p>
+            </div>
+            <div class="tab">
+              <h2 class="tabs__heading">
+                Двухместный (Комфорт-класс с двумя односпальными кроватьями)
+              </h2>
+              <p class="tabs__description">
+                Двухместный стандартный номер с двумя односпальными кроватями
+                20квм, (с/у в номере)
+              </p>
+              <p class="tabs__money">От <strong>1690 р.</strong></p>
+            </div>
+            <div class="tab">
+              <h2 class="tabs__heading">
+                Трёхместный (Комфорт-класс с двуспальной кроватью)
+              </h2>
+              <p class="tabs__description">
+                Трехместный стандартный номер с балконом 23квм, двуспальная
+                кровать и кресло-кровать (с/у в номере)
+              </p>
+              <p class="tabs__money">От <strong>1990 р.</strong></p>
+            </div>
+            <div class="tab">
+              <h2 class="tabs__heading">De Luxe (Делюкс четырехместный)</h2>
+              <p class="tabs__description">
+                Двухкомнатные апартаменты Люкс с балконом, 38 квм, две
+                двухспальные кровати, диван-кровать и кресло-кровать (с/у в
+                номере) + кухня
+              </p>
+              <p class="tabs__money">От <strong>2490 р.</strong></p>
+            </div>
+            <div class="tab">
+              <h2 class="tabs__heading">
+                Апартаменты (Двухкомнатные апартаменты люкс с балконом)
+              </h2>
+              <p class="tabs__description">
+                Двухкомнатные апартаменты Люкс с балконом, 38 квм, две
+                двуспальные кровати, диван-кровать и кресло-кровать (c/у в
+                номере) + кухня
+              </p>
+              <p class="tabs__money">От <strong>3490 р.</strong></p>
+            </div>
+            <div class="tabs__box-btns">
+              <a href="" class="btn btn_black" id="book">Забронировать</a>
+              <a href="" class="btn btn_white" id="detailed">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stocks">
+      <div class="container">
+        <div class="stocks__header">
+          <h2>Акции</h2>
+        </div>
+        <section class="stocks__content" id="out"></section>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="container">
+        <div class="reviews__header">
+          <h2>Отзывы</h2>
+        </div>
+        <div class="reviews__slider" id="rewsSlide"></div>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="contacts__row">
+        <div class="contacts__row_content">
+          <div class="contacts__content_header">
+            <h2>Контакты</h2>
+          </div>
+          <div class="contacts__content_adress">
+            <a href="#"
+              ><img src="img/geo-alt.svg" alt="" /> г. Сочи Адлерский район,
+              переулок Ереванский. Д6</a
+            >
+          </div>
+          <div class="contacts__content_bron">
+            <a href="#"><img src="img/telephone.svg" alt="" /> 89394444411</a>
+            <a href="mailto:chernomor.sochi@mail.ru"
+              ><img src="img/mail.svg" alt="" /> chernomor.sochi@mail.ru</a
+            >
+          </div>
+          <div class="contacts__content_hostel">
+            <a href="#"><img src="img/telephone.svg" alt="" /> 89394444411</a>
+            <a href="#"
+              ><img src="img/telephone.svg" alt="" />24/7 режим работы</a
+            >
+          </div>
+          <div class="contacts__content_time">
+            <img src="img/geo.svg" alt="" />
+            <p>7 минут до пляжа</p>
+          </div>
+        </div>
+        <div class="contacts__row_map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9746.265687771098!2d39.92610611352695!3d43.42755679353102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f5bfc086dfece9%3A0xf456467ff33b56cc!2z0L_QtdGALiDQldGA0LXQstCw0L3RgdC60LjQuSwg0JDQtNC70LXRgNGB0LrQuNC5LCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzU0MzQw!5e0!3m2!1sru!2sru!4v1678278657221!5m2!1sru!2sru"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </div>
 
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
