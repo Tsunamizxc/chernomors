@@ -1,12 +1,11 @@
-// slider start
-document.addEventListener('DOMContentLoaded', () => {
-  const slider = document.querySelector('.slider'),
-    slides = document.querySelectorAll('.slide__img'),
-    sliderInner = document.querySelector('.slider__inner'),
-    sliderWrapper = document.querySelector('.slider__wrapper'),
-    prev = document.querySelector('.slide__prev'),
-    next = document.querySelector('.slide__next'),
-    tabs = document.querySelectorAll('.tab');
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector(".slider"),
+    slides = document.querySelectorAll(".slide__img"),
+    sliderInner = document.querySelector(".slider__inner"),
+    sliderWrapper = document.querySelector(".slider__wrapper"),
+    prev = document.querySelector(".slide__prev"),
+    next = document.querySelector(".slide__next"),
+    tabs = document.querySelectorAll(".tab");
 
   let whatSlide = 0;
   let whatSlideWidth = 0;
@@ -15,23 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
   whatTab();
   whatWidth();
 
-  let dots = document.createElement('ol'),
+  let dots = document.createElement("ol"),
     dotsArr = [];
 
-  dots.classList.add('dots');
-  document.querySelector('.box-btn').prepend(dots);
+  dots.classList.add("dots");
+  document.querySelector(".box-btn").prepend(dots);
 
   for (let i = 0; i < slides.length; i++) {
-    let dot = document.createElement('li');
-    dot.classList.add('dot');
+    let dot = document.createElement("li");
+    dot.classList.add("dot");
     if (i == whatSlide) {
-      dot.style.background = '#FFC700';
+      dot.style.background = "#FFC700";
     }
     dots.append(dot);
     dotsArr.push(dot);
   }
 
-  next.addEventListener('click', () => {
+  next.addEventListener("click", () => {
     if (whatSlideWidth == whatWidth() * (slides.length - 1)) {
       whatSlideWidth = 0;
     } else {
@@ -49,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     whatTab();
   });
 
-  prev.addEventListener('click', () => {
+  prev.addEventListener("click", () => {
     if (whatSlideWidth == 0) {
       whatSlideWidth = whatWidth() * (slides.length - 1);
     } else {
@@ -68,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   dotsArr.forEach((item, i) => {
-    item.addEventListener('click', () => {
+    item.addEventListener("click", () => {
       whatSlideWidth = whatWidth() * i;
       sliderInner.style.translate = `-${whatSlideWidth}px`;
 
@@ -79,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     whatSlideWidth = whatWidth() * 0;
     sliderInner.style.translate = `-${whatSlideWidth}px`;
 
@@ -89,20 +88,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function whatTab() {
-    tabs.forEach(tab => {
-      tab.style.display = 'none';
+    tabs.forEach((tab) => {
+      tab.style.display = "none";
     });
-    tabs[whatSlide].style.display = 'block';
+    tabs[whatSlide].style.display = "block";
   }
 
   function paintDot() {
-    dotsArr.forEach(item => item.style.background = '#D9D9D9');
-    dotsArr[whatSlide].style.background = '#FFC700';
+    dotsArr.forEach((item) => (item.style.background = "#D9D9D9"));
+    dotsArr[whatSlide].style.background = "#FFC700";
   }
 
   function whatWidth() {
     let width = parseInt(window.getComputedStyle(sliderWrapper).width);
-    slides.forEach(slide => {
+    slides.forEach((slide) => {
       slide.style.width = width;
     });
     return width;
@@ -110,136 +109,353 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // detailed
 
-  const numbers = [{
-    name: 'Трёхместный (Эконом-класс с двуспальной кроватью)',
-    money: {
-      Январь: '5000',
-      Февраль: '10000',
-      Март: '--',
-      Апрель: '--',
-      Май: '--',
-      Июнь: '--',
-      Июль: '--',
-      Август: '--',
-      Сентябрь: '--',
-      Октябрь: '--',
-      Ноябрь: '--',
-      Декабрь: '--'
+  const numbers = [
+    {
+      name: "Трёхместный (Эконом-класс с двуспальной кроватью)",
+      money: {
+        Январь: "5000",
+        Февраль: "10000",
+        Март: "--",
+        Апрель: "--",
+        Май: "--",
+        Июнь: "--",
+        Июль: "--",
+        Август: "--",
+        Сентябрь: "--",
+        Октябрь: "--",
+        Ноябрь: "--",
+        Декабрь: "--",
+      },
+      imgSrc: [
+        "img/slider1.png",
+        "img/numbers/1-2.jpg",
+        "img/numbers/1-3.jpg",
+        "img/numbers/1-4.jpg",
+      ],
+      description: [
+        "Площать номера 18 квм",
+        "Двуспальная кровать и раскладное кресло",
+        "3 спальных места",
+      ],
+      inRoom: [
+        "настальная лампа",
+        "вешалка",
+        "гладильные принадлежности",
+        "натуральное постельное белье из 100% хлопка",
+        "москитная сетка",
+        "деревянный или паркетный пол",
+        "услуга «звонок-будильник»",
+        "принадлежности для барбекю",
+        "белье",
+        "Электрический чайник и многое другое.",
+      ],
+      inFloor: ["кулер", "чай - кофе(кофемашина)", "кухня"],
+      inTerritory: [
+        "парковка",
+        "детский бассейн",
+        "мангальная зона",
+        "беседки для посиделок",
+        "детская площадка",
+        "шезлонги для загара",
+        "ресепшен",
+        "аптечка первой помощи",
+      ],
     },
-    imgSrc: 'img/slider1.png',
-    description: ['Площать номера 18 квм', 'Двуспальная кровать и раскладное кресло', '3 спальных места'],
-    inRoom: ['настальная лампа', 'вешалка', 'гладильные принадлежности', 'натуральное постельное белье из 100% хлопка', 'москитная сетка', 'деревянный или паркетный пол', 'услуга «звонок-будильник»', 'принадлежности для барбекю', 'белье', 'Электрический чайник и многое другое.'],
-    inFloor: ['кулер', 'чай - кофе(кофемашина)', 'кухня'],
-    inTerritory: ['парковка', 'детский бассейн', 'мангальная зона', 'беседки для посиделок', 'детская площадка', 'шезлонги для загара', 'ресепшен', 'аптечка первой помощи']
-  }, {
-    name: 'Двухместный (Комфорт-класс с двуспальной кроватью)',
-    money: {
-      Январь: '--',
-      Февраль: '--',
-      Март: '--',
-      Апрель: '--',
-      Май: '--',
-      Июнь: '--',
-      Июль: '--',
-      Август: '--',
-      Сентябрь: '--',
-      Октябрь: '--',
-      Ноябрь: '--',
-      Декабрь: '--'
+    {
+      name: "Двухместный (Комфорт-класс с двуспальной кроватью)",
+      money: {
+        Январь: "--",
+        Февраль: "--",
+        Март: "--",
+        Апрель: "--",
+        Май: "--",
+        Июнь: "--",
+        Июль: "--",
+        Август: "--",
+        Сентябрь: "--",
+        Октябрь: "--",
+        Ноябрь: "--",
+        Декабрь: "--",
+      },
+      imgSrc: [
+        "img/numbers/2-1.jpg",
+        "img/numbers/2-2.jpg",
+        "img/numbers/2-3.jpg",
+        "img/numbers/2-4.jpg",
+      ],
+      description: [
+        "Площать номера 20 квм",
+        "Двуспальная кровать",
+        "2 спальных места",
+      ],
+      inRoom: [
+        "бра",
+        "натуральное постельное белье из 100% хлопка",
+        "услуга «звонок-будильник»",
+        "принадлежности для барбекю",
+        "гипоаллергенная подушка",
+        "затемненные шторы",
+        "средства по уходу за обувью",
+        "кровать-манеж для детей",
+        "детектор угарного газа",
+        "набор постельного белья",
+        "обогреватель",
+        "кондиционер",
+        "индивидуальные шкафчики",
+      ],
+      inFloor: [
+        "душ",
+        "туалет",
+        "душ-поддон",
+        "полотенцесушитель",
+        "полочки для косметических средств",
+        "освежитель воздуха",
+      ],
+      inTerritory: [
+        "вид на город",
+        "беседка для отдыха",
+        "балкон",
+        "вид во внутренний дворик",
+      ],
     },
-    imgSrc: 'img/slider2.png',
-    description: ['Площать номера 20 квм', 'Двуспальная кровать', '2 спальных места'],
-    inRoom: ['inRoom', 'op2', 'op3'],
-    inFloor: ['inFloor', 'op2', 'op3'],
-    inTerritory: ['inTer', 'op2', 'op3']
-  }, {
-    name: 'Двухместный (Комфорт-класс с двумя односпальными кроватьями)',
-    money: {
-      Январь: '--',
-      Февраль: '--',
-      Март: '--',
-      Апрель: '--',
-      Май: '--',
-      Июнь: '--',
-      Июль: '--',
-      Август: '--',
-      Сентябрь: '--',
-      Октябрь: '--',
-      Ноябрь: '--',
-      Декабрь: '--'
+    {
+      name: "Двухместный (Комфорт-класс с двумя односпальными кроватьями)",
+      money: {
+        Январь: "--",
+        Февраль: "--",
+        Март: "--",
+        Апрель: "--",
+        Май: "--",
+        Июнь: "--",
+        Июль: "--",
+        Август: "--",
+        Сентябрь: "--",
+        Октябрь: "--",
+        Ноябрь: "--",
+        Декабрь: "--",
+      },
+      imgSrc: [
+        "img/numbers/3-1.jpg",
+        "img/numbers/3-2.jpg",
+        "img/numbers/3-3.jpg",
+        "img/numbers/3-4.jpg",
+      ],
+      description: [
+        "Площадь номера 20 квм",
+        "Две односпальные кровати",
+        "2 спальных места",
+      ],
+      inRoom: [
+        "розетка возле кровати",
+        "звукоизоляция",
+        "затемненные шторы",
+        "прикроватные тумбочки",
+        "индивидуальные шкафчики",
+        "доступ к зоне барбекю",
+        "доступ к камерам хранения",
+        "собственная зона барбекю",
+        "бесплатные газеты и журналы в представительском лаундже",
+        "матрас с ортопедическим основанием",
+        "гипоаллергенное постельное бельё",
+        "кондиционер",
+      ],
+      inFloor: [
+        "полотенцесушитель",
+        "душ или ванная",
+        "держатели для полотенец",
+        "душевая кабина",
+        "раковина",
+        "туалет",
+      ],
+      inTerritory: [
+        "вид на сад",
+        "вид во внутренний дворик",
+        "балкон",
+        "уличная мебель",
+        "уличная мебель",
+      ],
     },
-    imgSrc: 'img/slider3.png',
-    description: ['op1', 'op2', 'op3'],
-    inRoom: ['inRoom', 'op2', 'op3'],
-    inFloor: ['inFloor', 'op2', 'op3'],
-    inTerritory: ['inTer', 'op2', 'op3']
-  }, {
-    name: 'Трёхместный (Комфорт-класс с двуспальной кроватью)',
-    money: {
-      Январь: '--',
-      Февраль: '--',
-      Март: '--',
-      Апрель: '--',
-      Май: '--',
-      Июнь: '--',
-      Июль: '--',
-      Август: '--',
-      Сентябрь: '--',
-      Октябрь: '--',
-      Ноябрь: '--',
-      Декабрь: '--'
+    {
+      name: "Трёхместный (Комфорт-класс с двуспальной кроватью)",
+      money: {
+        Январь: "--",
+        Февраль: "--",
+        Март: "--",
+        Апрель: "--",
+        Май: "--",
+        Июнь: "--",
+        Июль: "--",
+        Август: "--",
+        Сентябрь: "--",
+        Октябрь: "--",
+        Ноябрь: "--",
+        Декабрь: "--",
+      },
+      imgSrc: [
+        "img/numbers/4-1.jpg",
+        "img/numbers/4-2.jpg",
+        "img/numbers/4-3.jpg",
+        "img/numbers/4-4.jpg",
+      ],
+      description: [
+        "Площадь номера 23м2",
+        "Односпальная кровать и двуспальная кровать",
+        "3 спальных места",
+      ],
+      inRoom: [
+        "матрасы с ортопедическим основанием",
+        "набор полотенец",
+        "индивидуальные шкафчики",
+        "розетка возле кровати",
+        "набор постельного белья",
+        "натуральное постельное белье из 100% хлопка",
+        "будильник",
+        "принадлежности для барбекю",
+        "датчик дыма",
+        "доступ на детскую площадку",
+        "гладильные принадлежности",
+        "деревянный или паркетный пол",
+        "бра",
+        "индивидуальные светильники",
+      ],
+      inFloor: [
+        "полочки для косметических средств",
+        "душ или ванная",
+        "держатели для полотенец",
+        "душевая кабина",
+        "раковина",
+        "туалет",
+      ],
+      inTerritory: ["балкон", "красивый вид", "терраса"],
     },
-    imgSrc: 'img/slider4.png',
-    description: ['op1', 'op2', 'op3'],
-    inRoom: ['inRoom', 'op2', 'op3'],
-    inFloor: ['inFloor', 'op2', 'op3'],
-    inTerritory: ['inTer', 'op2', 'op3']
-  }, {
-    name: 'De Luxe (Делюкс четырехместный)',
-    money: {
-      Январь: '--',
-      Февраль: '--',
-      Март: '--',
-      Апрель: '--',
-      Май: '--',
-      Июнь: '--',
-      Июль: '--',
-      Август: '--',
-      Сентябрь: '--',
-      Октябрь: '--',
-      Ноябрь: '--',
-      Декабрь: '--'
+    {
+      name: "De Luxe (Делюкс четырехместный)",
+      money: {
+        Январь: "--",
+        Февраль: "--",
+        Март: "--",
+        Апрель: "--",
+        Май: "--",
+        Июнь: "--",
+        Июль: "--",
+        Август: "--",
+        Сентябрь: "--",
+        Октябрь: "--",
+        Ноябрь: "--",
+        Декабрь: "--",
+      },
+      imgSrc: [
+        "img/numbers/5-1.jpg",
+        "img/numbers/5-2.jpg",
+        "img/numbers/5-3.jpg",
+        "img/numbers/5-4.jpg",
+      ],
+      description: [
+        "Площадь номера 27м2",
+        "Односпальная кровать, двуспальная кровать и раскладное кресло",
+        "4 спальных места",
+      ],
+      inRoom: [
+        "бра",
+        "датчик дыма",
+        "доступ к зоне барбекю",
+        "набор полотенец",
+        "индивидуальные шкафчики",
+        "розетка возле кровати",
+        "набор постельного белья",
+        "натуральное постельное белье из 100% хлопка",
+        "будильник",
+        "принадлежности для барбекю",
+        "датчик дыма",
+        "доступ на детскую площадку",
+      ],
+      inFloor: [
+        "душ",
+        "туалет",
+        "душ-поддон",
+        "полотенцесушитель",
+        "полочки для косметических средств",
+        "освежитель воздуха",
+      ],
+      inTerritory: [
+        "вид на сад",
+        "вид во внутренний дворик",
+        "балкон",
+        "уличная мебель",
+        "уличная мебель",
+      ],
     },
-    imgSrc: 'img/slider5.png',
-    description: ['op1', 'op2', 'op3'],
-    inRoom: ['inRoom', 'op2', 'op3'],
-    inFloor: ['inFloor', 'op2', 'op3'],
-    inTerritory: ['inTer', 'op2', 'op3']
-  }, {
-    name: 'Апартаменты (Двухкомнатные апартаменты люкс с балконом)',
-    money: {
-      Январь: '--',
-      Февраль: '--',
-      Март: '--',
-      Апрель: '--',
-      Май: '--',
-      Июнь: '--',
-      Июль: '--',
-      Август: '--',
-      Сентябрь: '--',
-      Октябрь: '--',
-      Ноябрь: '--',
-      Декабрь: '--'
+    {
+      name: "Апартаменты (Двухкомнатные апартаменты люкс с балконом)",
+      money: {
+        Январь: "--",
+        Февраль: "--",
+        Март: "--",
+        Апрель: "--",
+        Май: "--",
+        Июнь: "--",
+        Июль: "--",
+        Август: "--",
+        Сентябрь: "--",
+        Октябрь: "--",
+        Ноябрь: "--",
+        Декабрь: "--",
+      },
+      imgSrc: [
+        "img/numbers/6-1.jpg",
+        "img/numbers/6-2.jpg",
+        "img/numbers/6-3.jpg",
+        "img/numbers/6-4.jpg",
+      ],
+      description: [
+        "Площадь номера 39м2",
+        "Двуспальная кровать, кровать King-size и диван-кровать",
+        "4 спальных места",
+      ],
+      inRoom: [
+        "балкон",
+        "натуральное постельное белье из 100% хлопка",
+        "услуга «звонок-будильник»",
+        "принадлежности для барбекю",
+        "гипоаллергенная подушка",
+        "затемненные шторы",
+        "средства по уходу за обувью",
+        "кровать-манеж для детей",
+        "детектор угарного газа",
+        "набор постельного белья",
+        "обогреватель",
+        "кондиционер",
+        "индивидуальные шкафчики",
+      ],
+      inFloor: [
+        "душ",
+        "туалет",
+        "душ-поддон",
+        "полотенцесушитель",
+        "полочки для косметических средств",
+        "освежитель воздуха",
+      ],
+      inTerritory: [
+        "вид на город",
+        "беседка для отдыха",
+        "балкон",
+        "вид во внутренний дворик",
+      ],
     },
-    imgSrc: 'img/slider6.png',
-    description: ['op1', 'op2', 'op3'],
-    inRoom: ['inRoom', 'op2', 'op3'],
-    inFloor: ['inFloor', 'op2', 'op3'],
-    inTerritory: ['inTer', 'op2', 'op3']
-  }];
+  ];
 
   class NumberHotel {
-    constructor(name, money, imgSrc, descr, inRoom, inFloor, inTerritory, parents) {
+    constructor(
+      name,
+      money,
+      imgSrc,
+      descr,
+      inRoom,
+      inFloor,
+      inTerritory,
+      parents,
+      sliderParents
+    ) {
       this.name = name;
       this.money = money;
       this.imgSrc = imgSrc;
@@ -248,33 +464,43 @@ document.addEventListener('DOMContentLoaded', () => {
       this.inFloor = inFloor;
       this.inTerritory = inTerritory;
       this.parents = parents;
+      this.sliderParents = sliderParents;
     }
     render() {
-      this.parents.innerHTML =
-        `
-        <h2 class="detailed-number__heading">${this.name}</h2>
-        <div class="detailed-number__line"></div>
+      if (whatSlide == 0 || whatSlide == 5) {
+        document.querySelectorAll("swiper-slide img").forEach((item) => {
+          item.style.objectPosition = "center";
+        });
+      } else {
+        document.querySelectorAll("swiper-slide img").forEach((item) => {
+          item.style.objectPosition = "bottom";
+        });
+      }
+      document.querySelector(".detailed-number__heading").textContent =
+        this.name;
+      this.parents.innerHTML = `
+        
       `;
       this.renderMoney();
       this.renderDescr();
       this.renderRoom();
       this.renderFloor();
       this.renderTerritory();
+      this.renderSlider();
     }
     renderMoney() {
-      let div = document.createElement('div');
-      div.classList.add('detailed-number__money');
-      div.innerHTML =
-        `
+      let div = document.createElement("div");
+      div.classList.add("detailed-number__money");
+      div.innerHTML = `
         <p class="detailed-number__money-heading detailed-number__text">Расценки по месяцам:</p>
       `;
-      let list = document.createElement('div');
-      list.classList.add('detailed-number__money-price');
+      let list = document.createElement("div");
+      list.classList.add("detailed-number__money-price");
       let arr = Object.entries(this.money);
       for (let el of arr) {
-        let text = document.createElement('div');
-        text.classList.add('detailed-number__text');
-        if (el[1] === '--') {
+        let text = document.createElement("div");
+        text.classList.add("detailed-number__text");
+        if (el[1] === "--") {
           text.innerHTML = `
           ${el[0]}-${el[1]}
         `;
@@ -290,19 +516,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     renderDescr() {
-      let div = document.createElement('div');
-      div.classList.add('detailed-number__description');
-      div.innerHTML =
-        `
+      let div = document.createElement("div");
+      div.classList.add("detailed-number__description");
+      div.innerHTML = `
         <p class="detailed-number__title detailed-number__text"><img src="img/title.png" alt="">О номере</p>
       `;
-      let list = document.createElement('ul');
-      list.classList.add('detailed-number__list');
-      this.descr.forEach(el => {
-        let item = document.createElement('li');
-        item.classList.add('detailed-number__item');
-        item.innerHTML =
-          `
+      let list = document.createElement("ul");
+      list.classList.add("detailed-number__list");
+      this.descr.forEach((el) => {
+        let item = document.createElement("li");
+        item.classList.add("detailed-number__item");
+        item.innerHTML = `
           <img src="img/exp.png" alt="">
           <p class="detailed-number__text">${el}</p>
           `;
@@ -313,19 +537,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     renderRoom() {
-      let div = document.createElement('div');
-      div.classList.add('detailed-number__description');
-      div.innerHTML =
-        `
+      let div = document.createElement("div");
+      div.classList.add("detailed-number__description");
+      div.innerHTML = `
         <p class="detailed-number__title detailed-number__text"><img src="img/title.png" alt="">В номере</p>
       `;
-      let list = document.createElement('ul');
-      list.classList.add('detailed-number__list');
-      this.inRoom.forEach(el => {
-        let item = document.createElement('li');
-        item.classList.add('detailed-number__item');
-        item.innerHTML =
-          `
+      let list = document.createElement("ul");
+      list.classList.add("detailed-number__list");
+      this.inRoom.forEach((el) => {
+        let item = document.createElement("li");
+        item.classList.add("detailed-number__item");
+        item.innerHTML = `
           <img src="img/exp.png" alt="">
           <p class="detailed-number__text">${el}</p>
           `;
@@ -336,19 +558,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     renderFloor() {
-      let div = document.createElement('div');
-      div.classList.add('detailed-number__description');
-      div.innerHTML =
-        `
+      let div = document.createElement("div");
+      div.classList.add("detailed-number__description");
+      div.innerHTML = `
         <p class="detailed-number__title detailed-number__text"><img src="img/title.png" alt="">На этаже</p>
       `;
-      let list = document.createElement('ul');
-      list.classList.add('detailed-number__list');
-      this.inFloor.forEach(el => {
-        let item = document.createElement('li');
-        item.classList.add('detailed-number__item');
-        item.innerHTML =
-          `
+      let list = document.createElement("ul");
+      list.classList.add("detailed-number__list");
+      this.inFloor.forEach((el) => {
+        let item = document.createElement("li");
+        item.classList.add("detailed-number__item");
+        item.innerHTML = `
           <img src="img/exp.png" alt="">
           <p class="detailed-number__text">${el}</p>
           `;
@@ -359,19 +579,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     renderTerritory() {
-      let div = document.createElement('div');
-      div.classList.add('detailed-number__description');
-      div.innerHTML =
-        `
+      let div = document.createElement("div");
+      div.classList.add("detailed-number__description");
+      div.innerHTML = `
         <p class="detailed-number__title detailed-number__text"><img src="img/title.png" alt="">На территории</p>
       `;
-      let list = document.createElement('ul');
-      list.classList.add('detailed-number__list');
-      this.inTerritory.forEach(el => {
-        let item = document.createElement('li');
-        item.classList.add('detailed-number__item');
-        item.innerHTML =
-          `
+      let list = document.createElement("ul");
+      list.classList.add("detailed-number__list");
+      this.inTerritory.forEach((el) => {
+        let item = document.createElement("li");
+        item.classList.add("detailed-number__item");
+        item.innerHTML = `
           <img src="img/exp.png" alt="">
           <p class="detailed-number__text">${el}</p>
           `;
@@ -380,37 +598,59 @@ document.addEventListener('DOMContentLoaded', () => {
       div.append(list);
       this.parents.append(div);
     }
+
+    renderSlider() {
+      let slider = document.querySelectorAll(".mySwiper swiper-slide img"),
+        sliderNav = document.querySelectorAll(".mySwiper2 swiper-slide img");
+      slider.forEach((item, i) => {
+        item.src = this.imgSrc[i];
+      });
+
+      sliderNav.forEach((item, i) => {
+        item.src = this.imgSrc[i];
+      });
+    }
   }
   const bodyDocs = document.querySelector("body");
-  const detailedBtn = document.querySelector('#detailed'),
-    parentsWrapper = document.querySelector('.detailed-number__wrapper'),
-    parents = document.querySelector('.detailed-number'),
-    detailedBtnClose = document.querySelector('.detailed-number__close'),
-    sectionNumbers = document.querySelector('.numbers');
+  const detailedBtn = document.querySelector("#detailed"),
+    parentsWrapper = document.querySelector(".detailed-number__wrapper"),
+    parents = document.querySelector(".detailed-number"),
+    detailedBtnClose = document.querySelector(".detailed-number__close"),
+    sectionNumbers = document.querySelector(".numbers"),
+    sliderParents = document.querySelector(".detailed-slider");
 
-  detailedBtn.addEventListener('click', (e) => {
+  detailedBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    parents.style.display = 'block';
+    parents.style.display = "block";
     bodyDocs.style.overflowY = "hidden";
-    let { name, money, imgSrc, description, inRoom, inFloor, inTerritory } = numbers[whatSlide];
-    let numberGener = new NumberHotel(name, money, imgSrc, description, inRoom, inFloor, inTerritory, parentsWrapper);
+    let { name, money, imgSrc, description, inRoom, inFloor, inTerritory } =
+      numbers[whatSlide];
+    let numberGener = new NumberHotel(
+      name,
+      money,
+      imgSrc,
+      description,
+      inRoom,
+      inFloor,
+      inTerritory,
+      parentsWrapper,
+      sliderParents
+    );
     numberGener.render();
-    // sectionNumbers.style.display = 'none';
   });
 
-  detailedBtnClose.addEventListener('click', (e) => {
-    parents.style.display = 'none';
+  detailedBtnClose.addEventListener("click", (e) => {
     bodyDocs.style.overflowY = "scroll";
-    // sectionNumbers.style.display = 'block';
+    parents.style.display = "none";
   });
-  document.addEventListener('keydown', (e) => {
-    if (e.key == 'Escape') {
-    parents.style.display = 'none';
-    bodyDocs.style.overflowY = "scroll";
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key == "Escape") {
+      bodyDocs.style.overflowY = "scroll";
+      parents.style.display = "none";
     }
-    });
+  });
 });
-
 // slider finish
 // burger-menu start
 let burgerMenu = document.querySelector(".burger__menu");
@@ -423,7 +663,7 @@ function burgerBtn(icon) {
 }
 let burgerBts = document.querySelector(".burger-btn");
 Bguard.addEventListener("click", function () {
-  burgerBts.classList.remove('change')
+  burgerBts.classList.remove("change");
   burgerList.classList.toggle("burger-active");
   Bguard.classList.toggle("on");
 });
@@ -521,3 +761,18 @@ $(".reviews__slider").slick({
   autoplaySpeed: 5000,
 });
 // reviews slider finish
+// smooth scroll start
+const anchors = document.querySelectorAll('a[href*="#"]');
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute("href").substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
+// smooth scroll finish

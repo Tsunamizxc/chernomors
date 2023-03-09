@@ -91,7 +91,7 @@ body {
 }
 
 .main-page {
-    height: 110vh;
+    height: 1085px;
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -420,27 +420,30 @@ body {
 
 /* detailed */
 
+/* detailed */
+
 .detailed-number__text {
-    font-family: "Montserrat";
     font-weight: 400;
     font-size: 20px;
     line-height: 161.4%;
     color: #000000;
-    z-index: 100;
 }
 
 .detailed-number {
     display: none;
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: rgb(255, 255, 255);
-    opacity: 1;
-    z-index: 300;
-    height: 100vh;
-    overflow-y: scroll;
+    z-index: 222;
+}
+
+.detailed-number-box {
+    display: flex;
+    justify-content: space-between;
 }
 
 .detailed-number__wrapper {
@@ -450,9 +453,8 @@ body {
 }
 
 .detailed-number__close {
-    z-index: 100;
     position: absolute;
-    right: 30px;
+    right: 50px;
     top: 50px;
     width: 30px;
     height: 30px;
@@ -464,18 +466,17 @@ body {
 }
 
 .detailed-number__heading {
-    font-family: "Montserrat";
     font-weight: 600;
     font-size: 42px;
     line-height: 51px;
     color: #1e1e1e;
+    margin-top: 75px;
     margin-bottom: 50px;
-    margin-left: 50px;
 }
 
 .detailed-number__line {
     left: 0;
-    border: 1px solid #ffb4b4;
+    border-top: 1px solid #ffb4b4;
     width: 70vw;
     margin-bottom: 50px;
 }
@@ -485,7 +486,6 @@ body {
 }
 
 .detailed-number__money {
-    margin-left: 50px;
     margin-bottom: 50px;
 }
 
@@ -496,7 +496,6 @@ body {
 }
 
 .detailed-number__description {
-    margin-left: 50px;
     margin-bottom: 60px;
 }
 
@@ -517,6 +516,73 @@ body {
 
 .detailed-number__item img {
     margin-right: 20px;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper {
+    height: 80%;
+    width: 100%;
+}
+
+.mySwiper2 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper2 swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: bottom;
+    object-position: bottom;
+}
+
+.detailed-slider {
+    height: 600px;
+    width: 45%;
 }
 //   slider finish
 // stocks start
@@ -680,9 +746,8 @@ body {
 .contacts {
     margin-top: 280px;
     &__row {
-      
         display: flex;
-align-items: flex-end;
+        align-items: flex-end;
         justify-content: space-between;
 
         &_content {
@@ -690,7 +755,7 @@ align-items: flex-end;
             flex-direction: column;
             justify-content: flex-end;
             background: #f4f4f4;
-          width: 100%;
+            width: 100%;
             padding: 60px 90px;
             max-height: 621px;
         }
@@ -816,8 +881,13 @@ align-items: flex-end;
 }
 // reviews finish
 // footer start
-
+.scrollTop {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
 .footer {
+    position: relative;
     padding: 43px 64px;
     background: #1e1d1d;
     &__row {
@@ -863,6 +933,12 @@ align-items: flex-end;
             }
         }
     }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+    @import "_320px";
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    @import "_768px";
 }
 @media (min-width: 768px) and (max-width: 1023px) {
     @import "_1024px";

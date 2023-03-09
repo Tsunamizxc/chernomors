@@ -79,7 +79,7 @@ body {
 }
 
 .main-page {
-    height: 110vh;
+    height: 1024px;
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -414,104 +414,32 @@ body {
 
 /* detailed */
 
-.detailed-number__text {
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 161.4%;
-    color: #000000;
-    z-index: 100;
-}
-
-.detailed-number {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(255, 255, 255);
-    opacity: 1;
-    z-index: 300;
-    height: 100vh;
-    overflow-y: scroll;
-}
-
-.detailed-number__wrapper {
-    position: relative;
-    padding-top: 50px;
-    width: 50%;
-}
-
-.detailed-number__close {
-    z-index: 100;
-    position: absolute;
-    right: 30px;
-    top: 50px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.detailed-number__close:hover {
-    opacity: 0.7;
+.detailed-number__line {
+    width: 600px;
 }
 
 .detailed-number__heading {
-    font-family: "Montserrat";
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 51px;
-    color: #1e1e1e;
-    margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 36px;
 }
 
-.detailed-number__line {
-    left: 0;
-    border: 1px solid #ffb4b4;
-    width: 70vw;
-    margin-bottom: 50px;
+.detailed-number-box {
+    flex-direction: column-reverse;
 }
 
-.detailed-number__money-heading {
-    margin-bottom: 20px;
+.detailed-slider {
+    width: 80%;
 }
 
-.detailed-number__money {
-    margin-left: 50px;
-    margin-bottom: 50px;
+.detailed-number__wrapper {
+    padding-top: 36px;
 }
 
-.detailed-number__money-price {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+.detailed-number__wrapper {
+    width: 100%;
 }
 
-.detailed-number__description {
-    margin-left: 50px;
-    margin-bottom: 60px;
-}
-
-.detailed-number__title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 32px;
-}
-
-.detailed-number__title img {
-    margin-right: 12px;
-}
-
-.detailed-number__item {
-    display: flex;
-    align-items: center;
-}
-
-.detailed-number__item img {
-    margin-right: 20px;
-}
 //   slider finish
 // stocks start
 .stocks {
@@ -566,13 +494,13 @@ body {
     &__header {
         margin-bottom: 50px;
         h2 {
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 700;
             font-size: 36px;
             line-height: 44px;
-            
-            color: #1E1E1E;
+
+            color: #1e1e1e;
         }
     }
 
@@ -590,13 +518,13 @@ body {
     align-items: center;
     padding: 65px 140px;
     h2 {
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
         line-height: 44px;
-        
-        color: #1E1E1E;
+
+        color: #1e1e1e;
         margin-bottom: 4px;
     }
     p {
@@ -672,7 +600,7 @@ body {
     }
 }
 .contacts {
-    margin-top: 280px;
+    margin-top: 180px;
     &__row {
         display: flex;
         align-items: flex-end;
@@ -717,7 +645,7 @@ body {
             margin-bottom: 53px;
             display: flex;
             align-items: center;
-            
+
             img {
                 margin-right: 15px;
             }
@@ -744,7 +672,7 @@ body {
             align-items: flex-start;
             flex-direction: column;
             margin-bottom: 53px;
-          
+
             img {
                 margin-right: 15px;
             }
