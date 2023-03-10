@@ -927,32 +927,34 @@ body {
 }
 // popup
 .popup__window {
-    margin-top: 100px;
     top: 10px;
     width: 278px;
     max-height: 70vh;
     overflow: scroll;
-}
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 
-.popup__heading {
+
+  .popup__heading {
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 30px;
-}
+  }
 
-.popup__img {
+  .popup__img {
     width: 60px;
     height: 60px;
     margin-bottom: 30px;
-}
+  }
 
-.popup__close {
+  .popup__close {
     width: 15px;
     height: 15px;
-}
+  }
 
-.popup__description {
+  .popup__description {
     font-size: 14px;
     padding-left: 15px;
     padding-right: 15px;
-}
+  }

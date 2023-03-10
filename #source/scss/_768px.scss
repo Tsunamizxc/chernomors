@@ -863,27 +863,28 @@ body {
 }
 // popup
 .popup__window {
-    z-index: 223;
-    margin-top: 50px;
     top: 10px;
     bottom: 10px;
     width: 449px;
-    max-height: 80vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-height: 70vh;
     overflow: scroll;
-}
+  }
 
-.popup__heading {
+  .popup__heading {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 36px;
-}
+  }
 
-.popup__img {
+  .popup__img {
     width: 80px;
     height: 80px;
     margin-bottom: 36px;
-}
+  }
 
-.popup__description {
+  .popup__description {
     font-size: 18px;
-}
+  }
+  // popup-main start

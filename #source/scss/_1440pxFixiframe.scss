@@ -807,29 +807,21 @@ body {
 }
 // popup
 .popup__window {
-    z-index: 223;
-    top: 10px;
-    margin-top: 100px;
-    bottom: 10px;
-    width: 668px;
-    height: 400px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    overflow: scroll;
-}
+    width: 944px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-.popup__heading {
-    font-size: 36px;
-    line-height: 44px;
+  .popup__heading {
     margin-bottom: 36px;
-}
+  }
 
-.popup__img {
-    width: 90px;
-    height: 90px;
+  .popup__img {
+    width: 100px;
+    height: 100px;
     margin-bottom: 36px;
-}
+  }
 
-.popup__description {
-    font-size: 20px;
-}
+  .popup__description {
+    font-size: 22px;
+  }

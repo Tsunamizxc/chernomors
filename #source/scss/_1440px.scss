@@ -798,3 +798,22 @@ body {
     display: flex;
     flex-direction: column;
 }
+.popup__window {
+    width: 944px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .popup__heading {
+    margin-bottom: 36px;
+  }
+
+  .popup__img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 36px;
+  }
+
+  .popup__description {
+    font-size: 22px;
+  }
