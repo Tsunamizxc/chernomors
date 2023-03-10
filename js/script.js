@@ -655,6 +655,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // burger-menu start
 let burgerMenu = document.querySelector(".burger__menu");
 let burgerList = burgerMenu.querySelector(".burger-list");
+let burgerItem = burgerMenu.querySelectorAll(".burger-menu-item");
 const Bguard = document.querySelector(".bGuard");
 function burgerBtn(icon) {
   icon.classList.toggle("change");
@@ -666,6 +667,13 @@ Bguard.addEventListener("click", function () {
   burgerBts.classList.remove("change");
   burgerList.classList.toggle("burger-active");
   Bguard.classList.toggle("on");
+});
+burgerItem.forEach((key) => {
+  key.addEventListener("click", function () {
+    burgerBts.classList.remove("change");
+    burgerList.classList.toggle("burger-active");
+    Bguard.classList.toggle("on");
+  });
 });
 // buger-menu finish
 // stocks block start
@@ -776,3 +784,50 @@ for (let anchor of anchors) {
   });
 }
 // smooth scroll finish
+// popup start
+document.addEventListener("DOMContentLoaded", () => {
+  const btnsRules = document.querySelectorAll(".popupRulesBtns"),
+    btnsServices = document.querySelectorAll(".popupServicesBtns"),
+    popupRules = document.querySelector(".popupRules"),
+    popupServices = document.querySelector(".popupServices"),
+    popupAll = document.querySelectorAll(".popup__window"),
+    popupClose = document.querySelectorAll(".popup__close"),
+    popupWrapper = document.querySelector(".popup__wrapper");
+
+  btnsRules.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      popupRules.style.display = "block";
+      popupWrapper.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  btnsServices.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      popupServices.style.display = "block";
+      popupWrapper.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  popupClose.forEach((el) => {
+    el.addEventListener("click", () => {
+      closePopup();
+    });
+  });
+
+  popupWrapper.addEventListener("click", (e) => {
+    if (e.target == popupWrapper) {
+      closePopup();
+    }
+  });
+
+  function closePopup() {
+    popupWrapper.style.display = "none";
+    popupAll.forEach((item) => (item.style.display = "none"));
+    document.body.style.overflow = "auto";
+  }
+});
+// popup finish

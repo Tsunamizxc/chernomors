@@ -822,3 +822,39 @@ body {
     top: 62px;
     right: 22px;
 }
+.hostel_row {
+    display: flex;
+    flex-direction: row;
+}
+.bron_row {
+    display: flex;
+    flex-direction: row;
+}
+// popup
+.popup__window {
+    z-index: 223;
+    top: 10px;
+    margin-top: 100px;
+    bottom: 10px;
+    width: 668px;
+    height: 700px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: scroll;
+}
+
+.popup__heading {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 36px;
+}
+
+.popup__img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 36px;
+}
+
+.popup__description {
+    font-size: 20px;
+}

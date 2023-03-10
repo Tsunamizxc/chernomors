@@ -156,20 +156,20 @@ body {
     z-index: 200;
     cursor: pointer;
     position: fixed;
-    right: 30px;
+    right: 10px;
     top: 85px;
     transform: translate(-50%, -50%);
 }
 .bar1,
 .bar3 {
-    width: 35px;
+    width: 30px;
     height: 3px;
     background-color: black;
-    margin: 12px 0;
+    margin: 6px 0;
     transition: 0.4s;
 }
 .bar2 {
-    width: 16px;
+    width: 10px;
     height: 3px;
     background-color: black;
     margin: 6px 0;
@@ -179,7 +179,7 @@ body {
 /* Rotate first bar */
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-13.5px, 12px);
+    transform: rotate(-45deg) translate(-5.5px, 3.5px);
     background-color: black;
 }
 
@@ -204,7 +204,7 @@ body {
     position: fixed;
     right: -1000px;
     top: 0;
-    width: 409px;
+    width: 309px;
     height: 100%;
     text-align: center;
     padding-top: 145px;
@@ -214,12 +214,13 @@ body {
 .burger-menu-item {
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 161.4%;
+    /* or 23px */
 
     color: #000000;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 .burger-active {
     right: 0px;
@@ -851,4 +852,38 @@ body {
     position: absolute;
     top: 62px;
     right: 22px;
+}
+.hostel_row {
+    display: flex;
+    flex-direction: column;
+}
+.bron_row {
+    display: flex;
+    flex-direction: column;
+}
+// popup
+.popup__window {
+    z-index: 223;
+    margin-top: 50px;
+    top: 10px;
+    bottom: 10px;
+    width: 449px;
+    max-height: 80vh;
+    overflow: scroll;
+}
+
+.popup__heading {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 36px;
+}
+
+.popup__img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 36px;
+}
+
+.popup__description {
+    font-size: 18px;
 }

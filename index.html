@@ -22,7 +22,7 @@
           <div class="header__row">
             <div class="header__logo">
               <div class="header__logo_img">
-                <a href="#"><img src="img/logo.svg" alt="" /></a>
+                <a href="#top"><img src="img/logo.svg" alt="" /></a>
               </div>
             </div>
             <div class="header__menu">
@@ -30,13 +30,17 @@
                 <li><a href="#NandC" class="menu-item">Номера и цены</a></li>
                 <li><a href="#stocks" class="menu-item">Акции</a></li>
                 <li><a href="#rew" class="menu-item">Отзывы</a></li>
-                <li><a href="#" class="menu-item">Контакты</a></li>
-                <li><a href="#" class="menu-item">Правила бронирования</a></li>
-                <li><a href="#" class="menu-item">Услуги</a></li>
+                <li><a href="#contactss" class="menu-item">Контакты</a></li>
+                <li>
+                  <a class="menu-item popupRulesBtns">Правила бронирования</a>
+                </li>
+                <li>
+                  <a class="menu-item popupServicesBtns">Услуги</a>
+                </li>
               </ul>
             </div>
             <div class="header__phone">
-              <a href="#"
+              <a href="tel:89394444411"
                 ><img src="img/phoneicon.svg" alt="" />+7(939)444-44-11</a
               >
             </div>
@@ -50,17 +54,21 @@
               <div class="burger__menu">
                 <ul class="burger-list">
                   <li>
-                    <a href="#" class="burger-menu-item">Номера и цены</a>
+                    <a href="#NandC" class="burger-menu-item">Номера и цены</a>
                   </li>
-                  <li><a href="#" class="burger-menu-item">Акции</a></li>
-                  <li><a href="#" class="burger-menu-item">Отзывы</a></li>
-                  <li><a href="#" class="burger-menu-item">Контакты</a></li>
+                  <li><a href="#stocks" class="burger-menu-item">Акции</a></li>
+                  <li><a href="#rew" class="burger-menu-item">Отзывы</a></li>
                   <li>
-                    <a href="#" class="burger-menu-item"
+                    <a href="#contactss" class="burger-menu-item">Контакты</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu-item popupRulesBtns"
                       >Правила бронирования</a
                     >
                   </li>
-                  <li><a href="#" class="burger-menu-item">Услуги</a></li>
+                  <li>
+                    <a class="burger-menu-item popupServicesBtns">Услуги</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -278,37 +286,48 @@
         <div class="reviews__slider" id="rewsSlide"></div>
       </div>
     </div>
-    <div class="contacts">
+    <div class="contacts" id="contactss">
       <div class="contacts__row contacts__column-rev">
         <div class="contacts__row_content">
           <div class="contacts__content_header">
             <h2>Контакты</h2>
           </div>
           <div class="contacts__content_adress">
-            <img src="img/geo-alt.svg" alt="" /><a href="#">
+            <img src="img/geo-alt.svg" alt="" /><a
+              href="https://goo.gl/maps/soJpCnwFZr1vgENj6"
+              target="_blank"
+            >
               г. Сочи Адлерский район, переулок Ереванский. Д6</a
             >
           </div>
           <div class="contacts__content_bron">
             <p class="content-name">Отдел бронирования</p>
-            <div class="bron-one">
-              <img src="img/telephone.svg" alt="" /><a href="#"> 89394444411</a>
-            </div>
-            <div class="bron-two">
-              <img src="img/mail.svg" alt="" /><a
-                href="mailto:chernomor.sochi@mail.ru"
-              >
-                chernomor.sochi@mail.ru</a
-              >
+            <div class="bron_row">
+              <div class="bron-one">
+                <img src="img/telephone.svg" alt="" /><a href="tel:89394444411">
+                  +7(939)444-44-11</a
+                >
+              </div>
+              <div class="bron-two">
+                <img src="img/mail.svg" alt="" /><a
+                  href="mailto:chernomor.sochi@mail.ru"
+                >
+                  chernomor.sochi@mail.ru</a
+                >
+              </div>
             </div>
           </div>
           <div class="contacts__content_hostel">
             <p class="content-name">Респешен отеля</p>
-            <div class="hostel-one">
-              <img src="img/telephone.svg" alt="" /><a href="#"> 89394444411</a>
-            </div>
-            <div class="hostel-two">
-              <img src="img/time.svg" alt="" /><a href="#">24/7 режим работы</a>
+            <div class="hostel_row">
+              <div class="hostel-one">
+                <img src="img/telephone.svg" alt="" /><a href="tel:89394444411">
+                  +7(939)444-44-11</a
+                >
+              </div>
+              <div class="hostel-two">
+                <img src="img/time.svg" alt="" /><a>24/7 режим работы</a>
+              </div>
             </div>
           </div>
           <div class="contacts__content_time">
@@ -338,26 +357,33 @@
           <div class="footer__list">
             <div class="footer__list_menu">
               <ul>
-                <li class="footer__menu_item"><a href="#">Номера и цены</a></li>
-                <li class="footer__menu_item"><a href="#">Акции</a></li>
-                <li class="footer__menu_item"><a href="#">Отзывы</a></li>
-                <li class="footer__menu_item"><a href="#">Контакты</a></li>
-              </ul>
-            </div>
-            <div class="footer__list_menu">
-              <ul>
                 <li class="footer__menu_item">
-                  <a href="#">Правила бронирования</a>
+                  <a href="#NandC">Номера и цены</a>
                 </li>
-                <li class="footer__menu_item"><a href="#">Услуги</a></li>
-                <li class="footer__menu_item"><a href="#">Цены номеров</a></li>
+                <li class="footer__menu_item"><a href="#stocks">Акции</a></li>
+                <li class="footer__menu_item"><a href="#rew">Отзывы</a></li>
+                <li class="footer__menu_item">
+                  <a href="#contactss">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list_menu">
+              <ul>
+                <li class="footer__menu_item popupRulesBtns">
+                  <a href="#top">Правила бронирования</a>
+                </li>
+                <li class="footer__menu_item popupServicesBtns">
+                  <a href="#top">Услуги</a>
+                </li>
               </ul>
             </div>
             <div class="footer__list_menu">
               <ul>
                 <li class="footer__menu_item">
-                  <img src="img/footer/vector.svg" alt="" /><a href="#">
-                    89394444411</a
+                  <img src="img/footer/vector.svg" alt="" /><a
+                    href="tel:89394444411"
+                  >
+                    +7(939)444-44-11</a
                   >
                 </li>
                 <li class="footer__menu_item">
@@ -368,12 +394,15 @@
                   >
                 </li>
                 <li class="footer__menu_item">
-                  <img src="img/footer/geo-alt.svg" alt="" /><a href="#">
+                  <img src="img/footer/geo-alt.svg" alt="" /><a
+                    href="https://goo.gl/maps/soJpCnwFZr1vgENj6"
+                    target="_blank"
+                  >
                     г. Сочи Адлерский район, переулок Ереванский. Д6</a
                   >
                 </li>
                 <li class="footer__menu_item">
-                  <img src="img/footer/Union.svg" alt="" /><a href="#"
+                  <img src="img/footer/Union.svg" alt="" /><a
                     >24/7 режим работы</a
                   >
                 </li>
@@ -383,7 +412,64 @@
         </div>
       </div>
     </footer>
-
+    <!-- копипаст -->
+    <div class="popup__wrapper">
+      <div class="popup__window popupRules">
+        <img class="popup__close" src="img/close.png" alt="" />
+        <h3 class="popup__heading">Правила бронирования</h3>
+        <img class="popup__img" src="img/popupRules.svg" alt="" />
+        <p class="popup__description">
+          Уважаемые гости, после отправки заявки на бронирование, в течение дня
+          вы получите письмо-договор на эл. почту. Ознакомьтесь, проверьте даты,
+          категорию номера. Возможно, понадобится предоплата! (Различные способы
+          оплаты доступны) Ваше бронирование будет подтверждено после выполнения
+          условий, изложенных в Письме-договоре. Вы получите автоматическое
+          подтверждение брони. Спасибо за Ваш выбор!
+        </p>
+      </div>
+      <div class="popup__window popupServices">
+        <img class="popup__close" src="img/close.png" alt="" />
+        <h3 class="popup__heading">Услуги</h3>
+        <img class="popup__img" src="img/popupServices.svg" alt="" />
+        <ul class="popup__list">
+          <li class="popup__item">
+            <p class="popup__description">-детские коляски (бесплатно)</p>
+          </li>
+          <li class="popup__item">
+            <p class="popup__description">
+              -детские самокаты и велосипеды(бесплатно)
+            </p>
+          </li>
+          <li class="popup__item">
+            <p class="popup__description">
+              -детская игровая площадка на территории (бесплатно)
+            </p>
+          </li>
+          <li class="popup__item">
+            <p class="popup__description">
+              -пляжные полотенца и принадлежности (бесплатно)
+            </p>
+          </li>
+          <li class="popup__item">
+            <p class="popup__description">
+              -трансфер бесплатно (условия уточняйте у оператора)
+            </p>
+          </li>
+          <li class="popup__item">
+            <p class="popup__description">-зона барбекю (бесплатно)</p>
+          </li>
+          <li class="popup__item">
+            <p class="popup__description">-бассейн для детей (бесплатно)</p>
+          </li>
+          <li class="popup__item">
+            <p class="popup__description">-завтрак (бесплатно)</p>
+          </li>
+          <li class="popup__item">
+            <p class="popup__description">-кофемашина (бесплатно)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script
       class="query"
       src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"

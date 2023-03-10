@@ -421,7 +421,7 @@ body {
 
 .mySwiper {
     height: 60%;
-  }
+}
 //   slider finish
 // stocks start
 .stocks {
@@ -626,7 +626,7 @@ body {
             margin-bottom: 53px;
             display: flex;
             align-items: center;
-            
+
             img {
                 margin-right: 15px;
             }
@@ -650,9 +650,9 @@ body {
 
         &_bron {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 53px;
-          
+
             img {
                 margin-right: 15px;
             }
@@ -676,7 +676,7 @@ body {
 
         &_hostel {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 53px;
             img {
                 margin-right: 15px;
