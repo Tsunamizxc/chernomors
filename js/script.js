@@ -830,26 +830,26 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.overflow = "auto";
   }
 });
-// popup finish 
+// popup finish
 // popup-main
-let pmBtn = document.querySelectorAll('.zabron');
-let popupMain = document.querySelector('.popup-main');
-let closeMB = document.querySelector('.popup-main__close');
+let pmBtn = document.querySelectorAll(".zabron");
+let popupMain = document.querySelector(".popup-main");
+let closeMB = document.querySelector(".popup-main__close");
 const BguardPM = document.querySelector(".bGuard-popup");
 pmBtn.forEach((pmBtns) => {
-pmBtns.addEventListener('click',function(){
-  popupMain.style.display = "block";
-  BguardPM.classList.add("on");
-})
+  pmBtns.addEventListener("click", function () {
+    popupMain.style.display = "block";
+    BguardPM.classList.add("ons");
+  });
+});
 
-})
- 
-closeMB.addEventListener('click',function(){
+closeMB.addEventListener("click", function () {
   popupMain.style.display = "none";
-  BguardPM.classList.remove("on");
-})
+  BguardPM.classList.remove("ons");
+  document.body.style.overflow = "auto";
+});
 
-BguardPM.addEventListener('click',function(){
+BguardPM.addEventListener("click", function () {
   popupMain.style.display = "none";
-  BguardPM.classList.remove("on");
-})
+  BguardPM.classList.remove("ons");
+});

@@ -264,7 +264,9 @@
               <p class="tabs__money">От <strong>3490 р.</strong></p>
             </div>
             <div class="tabs__box-btns">
-              <a href="#top" class="btn btn_black zabron" id="book">Забронировать</a>
+              <a href="#top" class="btn btn_black zabron" id="book"
+                >Забронировать</a
+              >
               <a href="" class="btn btn_white" id="detailed">Подробнее</a>
             </div>
           </div>
@@ -472,10 +474,10 @@
       </div>
     </div>
 
-    <div class="popup-main__wrapper">
+    <!-- <div class="popup-main__wrapper">
       <div class="popup-main">
         <div class="popup-main__close">
-          <a href="#"><img src="img/close.svg" alt=""></a>
+          <a href="#"><img src="img/close.svg" alt="" /></a>
         </div>
         <div class="popup-main__row">
           <div class="popup-main__header">
@@ -487,28 +489,121 @@
             <form action="">
               <div class="popup-main__form_name">
                 <label for="name">Имя*</label>
-                <input type="text" name="name">
+                <input type="text" name="name" />
               </div>
               <div class="popup-main__form_phone">
                 <label for="phone">Телефон*</label>
-                <input type="number" name="phone">
+                <input type="phone" name="phone" />
               </div>
               <div class="popup-main__form_mail">
                 <label for="mail">Email</label>
-                <input type="email" name="mail">
+                <input type="email" name="mail" />
               </div>
               <div class="popup-main__form_selection">
                 <label for="namberhotel">Номер отеля</label>
                 <select class="popup-main-select" name="numberhotel">
-                  <option class="popup-main_opt" value="Трёхместный (Эконом-класс с двуспальной кроватью)">Трёхместный (Эконом-класс с двуспальной кроватью)</option>
-                  <option class="popup-main_opt" value="Двухместный (Комфорт-класс с двуспальной кроватью)">Двухместный (Комфорт-класс с двуспальной кроватью)</option>
-                  <option class="popup-main_opt" value="Двухместный (Комфорт-класс с двумя односпальными кроватьями)">Двухместный (Комфорт-класс с двумя односпальными кроватьями)</option>
-                  <option class="popup-main_opt" value="Трёхместный (Комфорт-класс с двуспальной кроватью)">Трёхместный (Комфорт-класс с двуспальной кроватью)</option>
-                  <option class="popup-main_opt" value="De Luxe (Делюкс четырехместный)">De Luxe (Делюкс четырехместный)</option>
-                  <option class="popup-main_opt" value="Апартаменты (Двухкомнатные апартаменты люкс с балконом)">Апартаменты (Двухкомнатные апартаменты люкс с балконом)</option>
-                  </select>
+                  <option
+                    class="popup-main_opt"
+                    value="Трёхместный (Эконом-класс с двуспальной кроватью)"
+                  >
+                    Трёхместный (Эконом-класс с двуспальной кроватью)
+                  </option>
+                  <option
+                    class="popup-main_opt"
+                    value="Двухместный (Комфорт-класс с двуспальной кроватью)"
+                  >
+                    Двухместный (Комфорт-класс с двуспальной кроватью)
+                  </option>
+                  <option
+                    class="popup-main_opt"
+                    value="Двухместный (Комфорт-класс с двумя односпальными кроватьями)"
+                  >
+                    Двухместный (Комфорт-класс с двумя односпальными кроватьями)
+                  </option>
+                  <option
+                    class="popup-main_opt"
+                    value="Трёхместный (Комфорт-класс с двуспальной кроватью)"
+                  >
+                    Трёхместный (Комфорт-класс с двуспальной кроватью)
+                  </option>
+                  <option
+                    class="popup-main_opt"
+                    value="De Luxe (Делюкс четырехместный)"
+                  >
+                    De Luxe (Делюкс четырехместный)
+                  </option>
+                  <option
+                    class="popup-main_opt"
+                    value="Апартаменты (Двухкомнатные апартаменты люкс с балконом)"
+                  >
+                    Апартаменты (Двухкомнатные апартаменты люкс с балконом)
+                  </option>
+                </select>
               </div>
-              <button type="submit">Отправить </button>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="popup-main__wrapper">
+      <div class="popup-main">
+        <div class="popup-main__row">
+          <div class="popup-main__close">
+            <a href="#"><img src="img/close.svg" alt="" /></a>
+          </div>
+          <div class="popup-main__row_header">
+            <h2>Заполните данные</h2>
+          </div>
+          <div class="popup-main__row_form">
+            <form action="">
+              <div class="popup-main__form_name">
+                <label for=""> Имя* </label>
+                <input type="text" required />
+              </div>
+              <div class="popup-main__form_phone">
+                <label for=""> Телефон* </label>
+                <input type="tel" required />
+              </div>
+              <div class="popup-main__form_email">
+                <label for=""> Email* </label>
+                <input type="email" />
+              </div>
+              <div class="popup-main__form_select">
+                <label for=""> Номер отеля </label>
+                <select name="numberhotel">
+                  <option
+                    value="Трёхместный (Эконом-класс с двуспальной кроватью)"
+                  >
+                    Трёхместный (Эконом-класс с двуспальной кроватью)
+                  </option>
+                  <option
+                    value="Двухместный (Комфорт-класс с двуспальной кроватью)"
+                  >
+                    Двухместный (Комфорт-класс с двуспальной кроватью)
+                  </option>
+                  <option
+                    value="Двухместный (Комфорт-класс с двумя односпальными кроватьями)"
+                  >
+                    Двухместный (Комфорт-класс с двумя односпальными кроватьями)
+                  </option>
+                  <option
+                    value="Трёхместный (Комфорт-класс с двуспальной кроватью)"
+                  >
+                    Трёхместный (Комфорт-класс с двуспальной кроватью)
+                  </option>
+                  <option value="De Luxe (Делюкс четырехместный)">
+                    De Luxe (Делюкс четырехместный)
+                  </option>
+                  <option
+                    value="Апартаменты (Двухкомнатные апартаменты люкс с балконом)"
+                  >
+                    Апартаменты (Двухкомнатные апартаменты люкс с балконом)
+                  </option>
+                </select>
+              </div>
+
+              <button type="submit">Отправить</button>
             </form>
           </div>
         </div>
