@@ -13,7 +13,26 @@
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
   </head>
+
   <body>
     <div class="bGuard-popup"></div>
     <div class="bGuard"></div>
@@ -63,12 +82,14 @@
                     <a href="#contactss" class="burger-menu-item">Контакты</a>
                   </li>
                   <li>
-                    <a class="burger-menu-item popupRulesBtns"
+                    <a href="#top" class="burger-menu-item popupRulesBtns"
                       >Правила бронирования</a
                     >
                   </li>
                   <li>
-                    <a class="burger-menu-item popupServicesBtns">Услуги</a>
+                    <a href="#top" class="burger-menu-item popupServicesBtns"
+                      >Услуги</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -90,7 +111,7 @@
             </p>
           </div>
           <div class="main-page__header_button">
-            <button class="zabron">Забронировать номер</button>
+            <a href="#NandC">Забронировать</a>
           </div>
         </div>
       </div>
@@ -264,7 +285,7 @@
               <p class="tabs__money">От <strong>3490 р.</strong></p>
             </div>
             <div class="tabs__box-btns">
-              <a href="#top" class="btn btn_black zabron" id="book"
+              <a href="#NandC" class="btn btn_black zabron" id="book"
                 >Забронировать</a
               >
               <a href="" class="btn btn_white" id="detailed">Подробнее</a>
@@ -474,78 +495,6 @@
       </div>
     </div>
 
-    <!-- <div class="popup-main__wrapper">
-      <div class="popup-main">
-        <div class="popup-main__close">
-          <a href="#"><img src="img/close.svg" alt="" /></a>
-        </div>
-        <div class="popup-main__row">
-          <div class="popup-main__header">
-            <div class="popup-main__header_title">
-              <h2>Заполните данные</h2>
-            </div>
-          </div>
-          <div class="popup-main__form">
-            <form action="">
-              <div class="popup-main__form_name">
-                <label for="name">Имя*</label>
-                <input type="text" name="name" />
-              </div>
-              <div class="popup-main__form_phone">
-                <label for="phone">Телефон*</label>
-                <input type="phone" name="phone" />
-              </div>
-              <div class="popup-main__form_mail">
-                <label for="mail">Email</label>
-                <input type="email" name="mail" />
-              </div>
-              <div class="popup-main__form_selection">
-                <label for="namberhotel">Номер отеля</label>
-                <select class="popup-main-select" name="numberhotel">
-                  <option
-                    class="popup-main_opt"
-                    value="Трёхместный (Эконом-класс с двуспальной кроватью)"
-                  >
-                    Трёхместный (Эконом-класс с двуспальной кроватью)
-                  </option>
-                  <option
-                    class="popup-main_opt"
-                    value="Двухместный (Комфорт-класс с двуспальной кроватью)"
-                  >
-                    Двухместный (Комфорт-класс с двуспальной кроватью)
-                  </option>
-                  <option
-                    class="popup-main_opt"
-                    value="Двухместный (Комфорт-класс с двумя односпальными кроватьями)"
-                  >
-                    Двухместный (Комфорт-класс с двумя односпальными кроватьями)
-                  </option>
-                  <option
-                    class="popup-main_opt"
-                    value="Трёхместный (Комфорт-класс с двуспальной кроватью)"
-                  >
-                    Трёхместный (Комфорт-класс с двуспальной кроватью)
-                  </option>
-                  <option
-                    class="popup-main_opt"
-                    value="De Luxe (Делюкс четырехместный)"
-                  >
-                    De Luxe (Делюкс четырехместный)
-                  </option>
-                  <option
-                    class="popup-main_opt"
-                    value="Апартаменты (Двухкомнатные апартаменты люкс с балконом)"
-                  >
-                    Апартаменты (Двухкомнатные апартаменты люкс с балконом)
-                  </option>
-                </select>
-              </div>
-              <button type="submit">Отправить</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div class="popup-main__wrapper">
       <div class="popup-main">
         <div class="popup-main__row">
@@ -557,6 +506,13 @@
           </div>
           <div class="popup-main__row_form">
             <form action="">
+              <input
+                style="display: none"
+                type="text"
+                id="what"
+                name="NumbersHotels"
+              />
+              <!------------------------------------------------>
               <div class="popup-main__form_name">
                 <label for=""> Имя* </label>
                 <input type="text" required />
@@ -571,7 +527,7 @@
               </div>
               <div class="popup-main__form_select">
                 <label for=""> Номер отеля </label>
-                <select name="numberhotel">
+                <select id="selectNumber" name="numberhotel">
                   <option
                     value="Трёхместный (Эконом-класс с двуспальной кроватью)"
                   >
@@ -602,7 +558,6 @@
                   </option>
                 </select>
               </div>
-
               <button type="submit">Отправить</button>
             </form>
           </div>

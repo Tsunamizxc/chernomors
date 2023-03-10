@@ -174,7 +174,7 @@ body {
 .main-page__header_button {
   margin-top: 35px;
 }
-.main-page__header_button button {
+.main-page__header_button a {
   margin-bottom: 70px;
   display: inline-block;
   background: #ffffff;
@@ -191,11 +191,11 @@ body {
   -o-transition: background 0.3s ease, color 0.3s ease;
   transition: background 0.3s ease, color 0.3s ease;
 }
-.main-page__header_button button:hover {
+.main-page__header_button a:hover {
   background: none;
   color: #ffffff;
 }
-.main-page__header_button button:active {
+.main-page__header_button a:active {
   background: #625555;
   border: 1px #625555 solid;
 }
@@ -1163,7 +1163,7 @@ swiper-slide img {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(220, 220, 220, 0.486);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1176,6 +1176,7 @@ swiper-slide img {
 
 .popup__window {
   margin-top: 0px;
+  top: 10px;
   display: none;
   position: absolute;
   background-color: white;
@@ -1602,7 +1603,7 @@ swiper-slide img {
   .main-page__header_button {
     margin-top: 35px;
   }
-  .main-page__header_button button {
+  .main-page__header_button a {
     margin-bottom: 70px;
     display: inline-block;
     background: #ffffff;
@@ -1618,7 +1619,7 @@ swiper-slide img {
     -o-transition: background 0.3s ease, color 0.3s ease;
     transition: background 0.3s ease, color 0.3s ease;
   }
-  .main-page__header_button button:hover {
+  .main-page__header_button a:hover {
     background: none;
     color: #ffffff;
   }
@@ -2827,7 +2828,7 @@ swiper-slide img {
   .main-page__header_button {
     margin-top: 35px;
   }
-  .main-page__header_button button {
+  .main-page__header_button a {
     margin-bottom: 70px;
     display: inline-block;
     background: #ffffff;
@@ -2843,7 +2844,7 @@ swiper-slide img {
     -o-transition: background 0.3s ease, color 0.3s ease;
     transition: background 0.3s ease, color 0.3s ease;
   }
-  .main-page__header_button button:hover {
+  .main-page__header_button a:hover {
     background: none;
     color: #ffffff;
   }
@@ -3835,7 +3836,7 @@ swiper-slide img {
     padding: 11px 11px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1049px) {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
   body {
     font-family: "Montserrat";
@@ -3970,7 +3971,7 @@ swiper-slide img {
   .main-page__header_button {
     margin-top: 35px;
   }
-  .main-page__header_button button {
+  .main-page__header_button a {
     margin-bottom: 70px;
     display: inline-block;
     background: #ffffff;
@@ -3986,7 +3987,7 @@ swiper-slide img {
     -o-transition: background 0.3s ease, color 0.3s ease;
     transition: background 0.3s ease, color 0.3s ease;
   }
-  .main-page__header_button button:hover {
+  .main-page__header_button a:hover {
     background: none;
     color: #ffffff;
   }
@@ -4714,7 +4715,7 @@ swiper-slide img {
     top: 10px;
     bottom: 10px;
     width: 668px;
-    height: 700px;
+    height: 600px;
     padding-top: 40px;
     padding-bottom: 40px;
     overflow: scroll;
@@ -4958,7 +4959,7 @@ swiper-slide img {
     padding: 11px 11px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1190px) {
+@media (min-width: 1050px) and (max-width: 1190px) {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
   body {
     font-family: "Montserrat";
@@ -5093,7 +5094,7 @@ swiper-slide img {
   .main-page__header_button {
     margin-top: 35px;
   }
-  .main-page__header_button button {
+  .main-page__header_button a {
     margin-bottom: 70px;
     display: inline-block;
     background: #ffffff;
@@ -5109,7 +5110,7 @@ swiper-slide img {
     -o-transition: background 0.3s ease, color 0.3s ease;
     transition: background 0.3s ease, color 0.3s ease;
   }
-  .main-page__header_button button:hover {
+  .main-page__header_button a:hover {
     background: none;
     color: #ffffff;
   }
@@ -6045,7 +6046,7 @@ swiper-slide img {
     padding: 11px 11px;
   }
 }
-@media (min-width: 1191px) and (max-width: 1439px) {
+@media (min-width: 1191px) and (max-width: 1554px) {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
   body {
     font-family: "Montserrat";
@@ -6180,7 +6181,7 @@ swiper-slide img {
   .main-page__header_button {
     margin-top: 35px;
   }
-  .main-page__header_button button {
+  .main-page__header_button a {
     margin-bottom: 70px;
     display: inline-block;
     background: #ffffff;
@@ -6196,7 +6197,7 @@ swiper-slide img {
     -o-transition: background 0.3s ease, color 0.3s ease;
     transition: background 0.3s ease, color 0.3s ease;
   }
-  .main-page__header_button button:hover {
+  .main-page__header_button a:hover {
     background: none;
     color: #ffffff;
   }
@@ -7119,7 +7120,7 @@ swiper-slide img {
     padding: 11px 11px;
   }
 }
-@media (min-width: 1440px) and (max-width: 1886px) {
+@media (min-width: 1555px) and (max-width: 1886px) {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
   body {
     font-family: "Montserrat";
@@ -7269,7 +7270,7 @@ swiper-slide img {
   .main-page__header_button {
     margin-top: 35px;
   }
-  .main-page__header_button button {
+  .main-page__header_button a {
     margin-bottom: 70px;
     display: inline-block;
     background: #ffffff;
@@ -7285,7 +7286,7 @@ swiper-slide img {
     -o-transition: background 0.3s ease, color 0.3s ease;
     transition: background 0.3s ease, color 0.3s ease;
   }
-  .main-page__header_button button:hover {
+  .main-page__header_button a:hover {
     background: none;
     color: #ffffff;
   }
