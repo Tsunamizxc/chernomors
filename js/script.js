@@ -601,13 +601,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderSlider() {
       let slider = document.querySelectorAll(".mySwiper swiper-slide img"),
-        sliderNav = document.querySelectorAll(".mySwiper2 swiper-slide img");
+        sliderNav = document.querySelectorAll(".mySwiper2 swiper-slide img"),
+        sliderBlocks = document.querySelectorAll('.mySwiper swiper-slide'),
+        sliderNavBlocks = document.querySelectorAll('.mySwiper swiper-slide');
       slider.forEach((item, i) => {
         item.src = this.imgSrc[i];
       });
 
       sliderNav.forEach((item, i) => {
         item.src = this.imgSrc[i];
+      });
+
+      sliderBlocks.forEach((item, i) => {
+        item.setAttribute('data-swiper-slide-index', i);
+        item.setAttribute('aria-label', `${i + 1} / 4`);
+      });
+
+      sliderNavBlocks.forEach((item, i) => {
+        item.setAttribute('data-swiper-slide-index', i);
       });
     }
   }
@@ -617,7 +628,8 @@ document.addEventListener("DOMContentLoaded", () => {
     parents = document.querySelector(".detailed-number"),
     detailedBtnClose = document.querySelector(".detailed-number__close"),
     sectionNumbers = document.querySelector(".numbers"),
-    sliderParents = document.querySelector(".detailed-slider");
+    sliderParents = document.querySelector(".detailed-slider"),
+    swiper = document.querySelector('.mySwiper').swiper;
 
   detailedBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -881,8 +893,8 @@ BguardPM.addEventListener("click", function () {
 });
 // reload после отправки
 let formeds = document.querySelectorAll(".formed");
-for(let i = 0;i < formeds.length;i++){
-formeds[i].onsubmit = function() {
-  location.reload(true);
-}
+for (let i = 0; i < formeds.length; i++) {
+  formeds[i].onsubmit = function () {
+    location.reload(true);
+  }
 }

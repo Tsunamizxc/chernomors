@@ -1,597 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мини-отель "Черномор"</title>
 
-    <link rel="stylesheet" href="css/zero.css" />
-    <!-- adaptive slider -->
-    <!-- <link rel="stylesheet" href="css/adaptive.css" /> -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/site.webmanifest" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мини-отель "Черномор"</title>
 
-  <body>
-    <div class="bGuard-popup"></div>
-    <div class="bGuard"></div>
-    <div class="main-page">
-      <header class="header" id="top">
-        <div class="container">
-          <div class="header__row">
-            <div class="header__logo">
-              <div class="header__logo_img">
-                <a href="#top"><img src="img/logo.svg" alt="" /></a>
-              </div>
+  <link rel="stylesheet" href="css/zero.css" />
+  <!-- adaptive slider -->
+  <!-- <link rel="stylesheet" href="css/adaptive.css" /> -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+  <link rel="manifest" href="img/site.webmanifest" />
+</head>
+
+<body>
+  <div class="bGuard-popup"></div>
+  <div class="bGuard"></div>
+  <div class="main-page">
+    <header class="header" id="top">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__logo">
+            <div class="header__logo_img">
+              <a href="#top"><img src="img/logo.svg" alt="" /></a>
             </div>
-            <div class="header__menu">
-              <ul class="menu">
-                <li><a href="#NandC" class="menu-item">Номера и цены</a></li>
-                <li><a href="#stocks" class="menu-item">Акции</a></li>
-                <li><a href="#rew" class="menu-item">Отзывы</a></li>
-                <li><a href="#contactss" class="menu-item">Контакты</a></li>
+          </div>
+          <div class="header__menu">
+            <ul class="menu">
+              <li><a href="#NandC" class="menu-item">Номера и цены</a></li>
+              <li><a href="#stocks" class="menu-item">Акции</a></li>
+              <li><a href="#rew" class="menu-item">Отзывы</a></li>
+              <li><a href="#contactss" class="menu-item">Контакты</a></li>
+              <li>
+                <a class="menu-item popupRulesBtns">Правила бронирования</a>
+              </li>
+              <li>
+                <a class="menu-item popupServicesBtns">Услуги</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__phone">
+            <a href="tel:89394444411"><img src="img/phoneicon.svg" alt="" />+7(939)444-44-11</a>
+          </div>
+
+          <div class="burger__wrapper">
+            <div class="burger-btn" onclick="burgerBtn(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div class="burger__menu">
+              <ul class="burger-list">
                 <li>
-                  <a class="menu-item popupRulesBtns">Правила бронирования</a>
+                  <a href="#NandC" class="burger-menu-item">Номера и цены</a>
+                </li>
+                <li><a href="#stocks" class="burger-menu-item">Акции</a></li>
+                <li><a href="#rew" class="burger-menu-item">Отзывы</a></li>
+                <li>
+                  <a href="#contactss" class="burger-menu-item">Контакты</a>
                 </li>
                 <li>
-                  <a class="menu-item popupServicesBtns">Услуги</a>
+                  <a href="#top" class="burger-menu-item popupRulesBtns">Правила бронирования</a>
+                </li>
+                <li>
+                  <a href="#top" class="burger-menu-item popupServicesBtns">Услуги</a>
                 </li>
               </ul>
             </div>
-            <div class="header__phone">
-              <a href="tel:89394444411"
-                ><img src="img/phoneicon.svg" alt="" />+7(939)444-44-11</a
-              >
-            </div>
-
-            <div class="burger__wrapper">
-              <div class="burger-btn" onclick="burgerBtn(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-              <div class="burger__menu">
-                <ul class="burger-list">
-                  <li>
-                    <a href="#NandC" class="burger-menu-item">Номера и цены</a>
-                  </li>
-                  <li><a href="#stocks" class="burger-menu-item">Акции</a></li>
-                  <li><a href="#rew" class="burger-menu-item">Отзывы</a></li>
-                  <li>
-                    <a href="#contactss" class="burger-menu-item">Контакты</a>
-                  </li>
-                  <li>
-                    <a href="#top" class="burger-menu-item popupRulesBtns"
-                      >Правила бронирования</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#top" class="burger-menu-item popupServicesBtns"
-                      >Услуги</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="container">
-        <div class="main-page__header">
-          <div class="main-page__header_title">
-            <h1>МИНИ - ОТЕЛЬ «ЧЕРНОМОР»</h1>
-          </div>
-          <div class="main-page__header_discription">
-            <p>
-              Мини-отель «Черномор» находится в самом центре города-курорта
-              Сочи. До самого популярного пляжа 7 минут ходьбы. Вблизи отеля
-              множество круглосуточных развлечений для туристов и самая красивая
-              набережная черноморского побережья.
-            </p>
-          </div>
-          <div class="main-page__header_button">
-            <a href="#NandC">Забронировать</a>
           </div>
         </div>
       </div>
+    </header>
+    <div class="container">
+      <div class="main-page__header">
+        <div class="main-page__header_title">
+          <h1>МИНИ - ОТЕЛЬ «ЧЕРНОМОР»</h1>
+        </div>
+        <div class="main-page__header_discription">
+          <p>
+            Мини-отель «Черномор» находится в самом центре города-курорта
+            Сочи. До самого популярного пляжа 7 минут ходьбы. Вблизи отеля
+            множество круглосуточных развлечений для туристов и самая красивая
+            набережная черноморского побережья.
+          </p>
+        </div>
+        <div class="main-page__header_button">
+          <a href="#NandC">Забронировать</a>
+        </div>
+      </div>
     </div>
-    <!-- slider -->
+  </div>
+  <!-- slider -->
 
-    <div class="detailed-number">
-      <div class="container">
-        <img class="detailed-number__close" src="img/close.svg" alt="" />
-        <h2 class="detailed-number__heading"></h2>
-        <div class="detailed-number__line"></div>
-        <div class="detailed-number-box">
-          <div class="detailed-number__wrapper"></div>
-          <div class="detailed-slider">
-            <swiper-container
-              style="
+  <div class="detailed-number">
+    <div class="container">
+      <img class="detailed-number__close" src="img/close.svg" alt="" />
+      <h2 class="detailed-number__heading"></h2>
+      <div class="detailed-number__line"></div>
+      <div class="detailed-number-box">
+        <div class="detailed-number__wrapper"></div>
+        <div class="detailed-slider">
+          <swiper-container style="
                 —swiper-navigation-color: #fff;
                 —swiper-pagination-color: #fff;
-              "
-              class="mySwiper"
-              thumbs-swiper=".mySwiper2"
-              loop="true"
-              space-between="10"
-              navigation="true"
-              normalizeSlideIndex="true"
-            >
-              <swiper-slide>
-                <img src="" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="" />
-              </swiper-slide>
-            </swiper-container>
+              " class="mySwiper" thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true"
+            normalizeSlideIndex="true">
+            <swiper-slide>
+              <img src="" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="" />
+            </swiper-slide>
+          </swiper-container>
 
-            <swiper-container
-              class="mySwiper2"
-              loop="true"
-              space-between="10"
-              slides-per-view="4"
-              free-mode="true"
-              watch-slides-progress="true"
-              normalizeSlideIndex="true"
-            >
-              <swiper-slide>
-                <img src="" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="" />
-              </swiper-slide>
-            </swiper-container>
-          </div>
+          <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4"
+            normalizeSlideIndex="true">
+            <swiper-slide>
+              <img src="" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="" />
+            </swiper-slide>
+          </swiper-container>
         </div>
       </div>
     </div>
-    <div class="gray-wrapper" id="NandC">
-      <div class="container">
-        <h2 class="heading numbers__heading">Номера и цены</h2>
-        <div class="numbers__wrapper">
-          <div class="slider">
-            <div class="slider__border">
-              <img src="img/background.png" alt="" />
-            </div>
-            <div class="slider__wrapper">
-              <div class="slider__inner">
-                <div class="slide__img">
-                  <img src="img/slider1.png" alt="" />
-                </div>
-                <div class="slide__img">
-                  <img src="img/slider2.png" alt="" />
-                </div>
-                <div class="slide__img">
-                  <img src="img/slider3.png" alt="" />
-                </div>
-                <div class="slide__img">
-                  <img src="img/slider4.png" alt="" />
-                </div>
-                <div class="slide__img">
-                  <img src="img/slider5.png" alt="" />
-                </div>
-                <div class="slide__img">
-                  <img src="img/slider6.png" alt="" />
-                </div>
+  </div>
+  <div class="gray-wrapper" id="NandC">
+    <div class="container">
+      <h2 class="heading numbers__heading">Номера и цены</h2>
+      <div class="numbers__wrapper">
+        <div class="slider">
+          <div class="slider__border">
+            <img src="img/background.png" alt="" />
+          </div>
+          <div class="slider__wrapper">
+            <div class="slider__inner">
+              <div class="slide__img">
+                <img src="img/slider1.png" alt="" />
               </div>
-            </div>
-            <div class="box-btn">
-              <div class="box-btn__btns">
-                <img
-                  src="img/prev.svg"
-                  alt=""
-                  class="slider__btn slide__prev"
-                />
-                <img
-                  src="img/next.svg"
-                  alt=""
-                  class="slider__btn slide__next"
-                />
+              <div class="slide__img">
+                <img src="img/slider2.png" alt="" />
+              </div>
+              <div class="slide__img">
+                <img src="img/slider3.png" alt="" />
+              </div>
+              <div class="slide__img">
+                <img src="img/slider4.png" alt="" />
+              </div>
+              <div class="slide__img">
+                <img src="img/slider5.png" alt="" />
+              </div>
+              <div class="slide__img">
+                <img src="img/slider6.png" alt="" />
               </div>
             </div>
           </div>
-          <div class="tabs">
-            <div class="tab">
-              <h2 class="tabs__heading">
-                Трёхместный (Эконом-класс с двуспальной кроватью)
-              </h2>
-              <p class="tabs__description">
-                Трехместный номер комфорт-класса без с/у 18квм, двуспальная
-                кровать и кресло-кровать
-              </p>
-              <p class="tabs__money">От <strong>1290 р.</strong></p>
-            </div>
-            <div class="tab">
-              <h2 class="tabs__heading">
-                Двухместный (Комфорт-класс с двуспальной кроватью)
-              </h2>
-              <p class="tabs__description">
-                Двухместный стандартный номер с двуспальной кроватью 20квм,
-                двуспальная кровать (с/у в номере)
-              </p>
-              <p class="tabs__money">От <strong>1690 р.</strong></p>
-            </div>
-            <div class="tab">
-              <h2 class="tabs__heading">
-                Двухместный (Комфорт-класс с двумя односпальными кроватьями)
-              </h2>
-              <p class="tabs__description">
-                Двухместный стандартный номер с двумя односпальными кроватями
-                20квм, (с/у в номере)
-              </p>
-              <p class="tabs__money">От <strong>1690 р.</strong></p>
-            </div>
-            <div class="tab">
-              <h2 class="tabs__heading">
-                Трёхместный (Комфорт-класс с двуспальной кроватью)
-              </h2>
-              <p class="tabs__description">
-                Трехместный стандартный номер с балконом 23квм, двуспальная
-                кровать и кресло-кровать (с/у в номере)
-              </p>
-              <p class="tabs__money">От <strong>1990 р.</strong></p>
-            </div>
-            <div class="tab">
-              <h2 class="tabs__heading">De Luxe (Делюкс четырехместный)</h2>
-              <p class="tabs__description">
-                Двухкомнатные апартаменты Люкс с балконом, 38 квм, две
-                двухспальные кровати, диван-кровать и кресло-кровать (с/у в
-                номере) + кухня
-              </p>
-              <p class="tabs__money">От <strong>2490 р.</strong></p>
-            </div>
-            <div class="tab">
-              <h2 class="tabs__heading">
-                Апартаменты (Двухкомнатные апартаменты люкс с балконом)
-              </h2>
-              <p class="tabs__description">
-                Двухкомнатные апартаменты Люкс с балконом, 38 квм, две
-                двуспальные кровати, диван-кровать и кресло-кровать (c/у в
-                номере) + кухня
-              </p>
-              <p class="tabs__money">От <strong>3490 р.</strong></p>
-            </div>
-            <div class="tabs__box-btns">
-              <a href="#NandC" class="btn btn_black zabron" id="book"
-                >Забронировать</a
-              >
-              <a href="" class="btn btn_white" id="detailed">Подробнее</a>
+          <div class="box-btn">
+            <div class="box-btn__btns">
+              <img src="img/prev.svg" alt="" class="slider__btn slide__prev" />
+              <img src="img/next.svg" alt="" class="slider__btn slide__next" />
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="stocks" id="stocks">
-      <div class="container">
-        <div class="stocks__header">
-          <h2>Акции</h2>
-        </div>
-        <section class="stocks__content" id="out"></section>
-      </div>
-    </div>
-    <div class="reviews" id="rew">
-      <div class="container">
-        <div class="reviews__header">
-          <h2>Отзывы</h2>
-        </div>
-        <div class="reviews__slider" id="rewsSlide"></div>
-      </div>
-    </div>
-    <div class="contacts" id="contactss">
-      <div class="contacts__row contacts__column-rev">
-        <div class="contacts__row_content">
-          <div class="contacts__content_header">
-            <h2>Контакты</h2>
-          </div>
-          <div class="contacts__content_adress">
-            <img src="img/geo-alt.svg" alt="" /><a
-              href="https://goo.gl/maps/soJpCnwFZr1vgENj6"
-              target="_blank"
-            >
-              г. Сочи Адлерский район, переулок Ереванский. Д6</a
-            >
-          </div>
-          <div class="contacts__content_bron">
-            <p class="content-name">Отдел бронирования</p>
-            <div class="bron_row">
-              <div class="bron-one">
-                <img src="img/telephone.svg" alt="" /><a href="tel:89394444411">
-                  +7(939)444-44-11</a
-                >
-              </div>
-              <div class="bron-two">
-                <img src="img/mail.svg" alt="" /><a
-                  href="mailto:chernomor.sochi@mail.ru"
-                >
-                  chernomor.sochi@mail.ru</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="contacts__content_hostel">
-            <p class="content-name">Респешен отеля</p>
-            <div class="hostel_row">
-              <div class="hostel-one">
-                <img src="img/telephone.svg" alt="" /><a href="tel:89394444411">
-                  +7(939)444-44-11</a
-                >
-              </div>
-              <div class="hostel-two">
-                <img src="img/time.svg" alt="" /><a>24/7 режим работы</a>
-              </div>
-            </div>
-          </div>
-          <div class="contacts__content_time">
-            <img src="img/geo.svg" alt="" />
-            <p>7 минут до пляжа</p>
-          </div>
-        </div>
-        <div class="contacts__row_map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9746.265687771098!2d39.92610611352695!3d43.42755679353102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f5bfc086dfece9%3A0xf456467ff33b56cc!2z0L_QtdGALiDQldGA0LXQstCw0L3RgdC60LjQuSwg0JDQtNC70LXRgNGB0LrQuNC5LCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzU0MzQw!5e0!3m2!1sru!2sru!4v1678278657221!5m2!1sru!2sru"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="scrollTop">
-        <a href="#top"><img src="img/scrollTop.png" alt="" /></a>
-      </div>
-      <div class="container">
-        <div class="footer__row">
-          <div class="footer__row_logo">
-            <a href="#top"> <img src="img/logo.svg" alt="" /></a>
-          </div>
-          <div class="footer__list">
-            <div class="footer__list_menu">
-              <ul>
-                <li class="footer__menu_item">
-                  <a href="#NandC">Номера и цены</a>
-                </li>
-                <li class="footer__menu_item"><a href="#stocks">Акции</a></li>
-                <li class="footer__menu_item"><a href="#rew">Отзывы</a></li>
-                <li class="footer__menu_item">
-                  <a href="#contactss">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__list_menu">
-              <ul>
-                <li class="footer__menu_item popupRulesBtns">
-                  <a href="#top">Правила бронирования</a>
-                </li>
-                <li class="footer__menu_item popupServicesBtns">
-                  <a href="#top">Услуги</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__list_menu">
-              <ul>
-                <li class="footer__menu_item">
-                  <img src="img/footer/vector.svg" alt="" /><a
-                    href="tel:89394444411"
-                  >
-                    +7(939)444-44-11</a
-                  >
-                </li>
-                <li class="footer__menu_item">
-                  <img src="img/footer/sd.svg" alt="" /><a
-                    href="mailto:chernomor.sochi@mail.ru"
-                  >
-                    chernomor.sochi@mail.ru</a
-                  >
-                </li>
-                <li class="footer__menu_item">
-                  <img src="img/footer/geo-alt.svg" alt="" /><a
-                    href="https://goo.gl/maps/soJpCnwFZr1vgENj6"
-                    target="_blank"
-                  >
-                    г. Сочи Адлерский район, переулок Ереванский. Д6</a
-                  >
-                </li>
-                <li class="footer__menu_item">
-                  <img src="img/footer/Union.svg" alt="" /><a
-                    >24/7 режим работы</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- копипаст -->
-    <div class="popup__wrapper">
-      <div class="popup__window popupRules">
-        <img class="popup__close" src="img/close.png" alt="" />
-        <h3 class="popup__heading">Правила бронирования</h3>
-        <img class="popup__img" src="img/popupRules.svg" alt="" />
-        <p class="popup__description">
-          Уважаемые гости, после отправки заявки на бронирование, в течение дня
-          вы получите письмо-договор на эл. почту. Ознакомьтесь, проверьте даты,
-          категорию номера. Возможно, понадобится предоплата! (Различные способы
-          оплаты доступны) Ваше бронирование будет подтверждено после выполнения
-          условий, изложенных в Письме-договоре. Вы получите автоматическое
-          подтверждение брони. Спасибо за Ваш выбор!
-        </p>
-      </div>
-      <div class="popup__window popupServices">
-        <img class="popup__close" src="img/close.png" alt="" />
-        <h3 class="popup__heading">Услуги</h3>
-        <img class="popup__img" src="img/popupServices.svg" alt="" />
-        <ul class="popup__list">
-          <li class="popup__item">
-            <p class="popup__description">-детские коляски (бесплатно)</p>
-          </li>
-          <li class="popup__item">
-            <p class="popup__description">
-              -детские самокаты и велосипеды(бесплатно)
+        <div class="tabs">
+          <div class="tab">
+            <h2 class="tabs__heading">
+              Трёхместный (Эконом-класс с двуспальной кроватью)
+            </h2>
+            <p class="tabs__description">
+              Трехместный номер комфорт-класса без с/у 18квм, двуспальная
+              кровать и кресло-кровать
             </p>
-          </li>
-          <li class="popup__item">
-            <p class="popup__description">
-              -детская игровая площадка на территории (бесплатно)
+            <p class="tabs__money">От <strong>1290 р.</strong></p>
+          </div>
+          <div class="tab">
+            <h2 class="tabs__heading">
+              Двухместный (Комфорт-класс с двуспальной кроватью)
+            </h2>
+            <p class="tabs__description">
+              Двухместный стандартный номер с двуспальной кроватью 20квм,
+              двуспальная кровать (с/у в номере)
             </p>
-          </li>
-          <li class="popup__item">
-            <p class="popup__description">
-              -пляжные полотенца и принадлежности (бесплатно)
+            <p class="tabs__money">От <strong>1690 р.</strong></p>
+          </div>
+          <div class="tab">
+            <h2 class="tabs__heading">
+              Двухместный (Комфорт-класс с двумя односпальными кроватьями)
+            </h2>
+            <p class="tabs__description">
+              Двухместный стандартный номер с двумя односпальными кроватями
+              20квм, (с/у в номере)
             </p>
-          </li>
-          <li class="popup__item">
-            <p class="popup__description">
-              -трансфер бесплатно (условия уточняйте у оператора)
+            <p class="tabs__money">От <strong>1690 р.</strong></p>
+          </div>
+          <div class="tab">
+            <h2 class="tabs__heading">
+              Трёхместный (Комфорт-класс с двуспальной кроватью)
+            </h2>
+            <p class="tabs__description">
+              Трехместный стандартный номер с балконом 23квм, двуспальная
+              кровать и кресло-кровать (с/у в номере)
             </p>
-          </li>
-          <li class="popup__item">
-            <p class="popup__description">-зона барбекю (бесплатно)</p>
-          </li>
-          <li class="popup__item">
-            <p class="popup__description">-бассейн для детей (бесплатно)</p>
-          </li>
-          <li class="popup__item">
-            <p class="popup__description">-завтрак (бесплатно)</p>
-          </li>
-          <li class="popup__item">
-            <p class="popup__description">-кофемашина (бесплатно)</p>
-          </li>
-        </ul>
+            <p class="tabs__money">От <strong>1990 р.</strong></p>
+          </div>
+          <div class="tab">
+            <h2 class="tabs__heading">De Luxe (Делюкс четырехместный)</h2>
+            <p class="tabs__description">
+              Двухкомнатные апартаменты Люкс с балконом, 38 квм, две
+              двухспальные кровати, диван-кровать и кресло-кровать (с/у в
+              номере) + кухня
+            </p>
+            <p class="tabs__money">От <strong>2490 р.</strong></p>
+          </div>
+          <div class="tab">
+            <h2 class="tabs__heading">
+              Апартаменты (Двухкомнатные апартаменты люкс с балконом)
+            </h2>
+            <p class="tabs__description">
+              Двухкомнатные апартаменты Люкс с балконом, 38 квм, две
+              двуспальные кровати, диван-кровать и кресло-кровать (c/у в
+              номере) + кухня
+            </p>
+            <p class="tabs__money">От <strong>3490 р.</strong></p>
+          </div>
+          <div class="tabs__box-btns">
+            <a href="#NandC" class="btn btn_black zabron" id="book">Забронировать</a>
+            <a href="" class="btn btn_white" id="detailed">Подробнее</a>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="stocks" id="stocks">
+    <div class="container">
+      <div class="stocks__header">
+        <h2>Акции</h2>
+      </div>
+      <section class="stocks__content" id="out"></section>
+    </div>
+  </div>
+  <div class="reviews" id="rew">
+    <div class="container">
+      <div class="reviews__header">
+        <h2>Отзывы</h2>
+      </div>
+      <div class="reviews__slider" id="rewsSlide"></div>
+    </div>
+  </div>
+  <div class="contacts" id="contactss">
+    <div class="contacts__row contacts__column-rev">
+      <div class="contacts__row_content">
+        <div class="contacts__content_header">
+          <h2>Контакты</h2>
+        </div>
+        <div class="contacts__content_adress">
+          <img src="img/geo-alt.svg" alt="" /><a href="https://goo.gl/maps/soJpCnwFZr1vgENj6" target="_blank">
+            г. Сочи Адлерский район, переулок Ереванский. Д6</a>
+        </div>
+        <div class="contacts__content_bron">
+          <p class="content-name">Отдел бронирования</p>
+          <div class="bron_row">
+            <div class="bron-one">
+              <img src="img/telephone.svg" alt="" /><a href="tel:89394444411">
+                +7(939)444-44-11</a>
+            </div>
+            <div class="bron-two">
+              <img src="img/mail.svg" alt="" /><a href="mailto:chernomor.sochi@mail.ru">
+                chernomor.sochi@mail.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__content_hostel">
+          <p class="content-name">Респешен отеля</p>
+          <div class="hostel_row">
+            <div class="hostel-one">
+              <img src="img/telephone.svg" alt="" /><a href="tel:89394444411">
+                +7(939)444-44-11</a>
+            </div>
+            <div class="hostel-two">
+              <img src="img/time.svg" alt="" /><a>24/7 режим работы</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__content_time">
+          <img src="img/geo.svg" alt="" />
+          <p>7 минут до пляжа</p>
+        </div>
+      </div>
+      <div class="contacts__row_map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9746.265687771098!2d39.92610611352695!3d43.42755679353102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f5bfc086dfece9%3A0xf456467ff33b56cc!2z0L_QtdGALiDQldGA0LXQstCw0L3RgdC60LjQuSwg0JDQtNC70LXRgNGB0LrQuNC5LCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzU0MzQw!5e0!3m2!1sru!2sru!4v1678278657221!5m2!1sru!2sru"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="scrollTop">
+      <a href="#top"><img src="img/scrollTop.png" alt="" /></a>
+    </div>
+    <div class="container">
+      <div class="footer__row">
+        <div class="footer__row_logo">
+          <a href="#top"> <img src="img/logo.svg" alt="" /></a>
+        </div>
+        <div class="footer__list">
+          <div class="footer__list_menu">
+            <ul>
+              <li class="footer__menu_item">
+                <a href="#NandC">Номера и цены</a>
+              </li>
+              <li class="footer__menu_item"><a href="#stocks">Акции</a></li>
+              <li class="footer__menu_item"><a href="#rew">Отзывы</a></li>
+              <li class="footer__menu_item">
+                <a href="#contactss">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list_menu">
+            <ul>
+              <li class="footer__menu_item popupRulesBtns">
+                <a href="#top">Правила бронирования</a>
+              </li>
+              <li class="footer__menu_item popupServicesBtns">
+                <a href="#top">Услуги</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list_menu">
+            <ul>
+              <li class="footer__menu_item">
+                <img src="img/footer/vector.svg" alt="" /><a href="tel:89394444411">
+                  +7(939)444-44-11</a>
+              </li>
+              <li class="footer__menu_item">
+                <img src="img/footer/sd.svg" alt="" /><a href="mailto:chernomor.sochi@mail.ru">
+                  chernomor.sochi@mail.ru</a>
+              </li>
+              <li class="footer__menu_item">
+                <img src="img/footer/geo-alt.svg" alt="" /><a href="https://goo.gl/maps/soJpCnwFZr1vgENj6"
+                  target="_blank">
+                  г. Сочи Адлерский район, переулок Ереванский. Д6</a>
+              </li>
+              <li class="footer__menu_item">
+                <img src="img/footer/Union.svg" alt="" /><a>24/7 режим работы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- копипаст -->
+  <div class="popup__wrapper">
+    <div class="popup__window popupRules">
+      <img class="popup__close" src="img/close.png" alt="" />
+      <h3 class="popup__heading">Правила бронирования</h3>
+      <img class="popup__img" src="img/popupRules.svg" alt="" />
+      <p class="popup__description">
+        Уважаемые гости, после отправки заявки на бронирование, в течение дня
+        вы получите письмо-договор на эл. почту. Ознакомьтесь, проверьте даты,
+        категорию номера. Возможно, понадобится предоплата! (Различные способы
+        оплаты доступны) Ваше бронирование будет подтверждено после выполнения
+        условий, изложенных в Письме-договоре. Вы получите автоматическое
+        подтверждение брони. Спасибо за Ваш выбор!
+      </p>
+    </div>
+    <div class="popup__window popupServices">
+      <img class="popup__close" src="img/close.png" alt="" />
+      <h3 class="popup__heading">Услуги</h3>
+      <img class="popup__img" src="img/popupServices.svg" alt="" />
+      <ul class="popup__list">
+        <li class="popup__item">
+          <p class="popup__description">-детские коляски (бесплатно)</p>
+        </li>
+        <li class="popup__item">
+          <p class="popup__description">
+            -детские самокаты и велосипеды(бесплатно)
+          </p>
+        </li>
+        <li class="popup__item">
+          <p class="popup__description">
+            -детская игровая площадка на территории (бесплатно)
+          </p>
+        </li>
+        <li class="popup__item">
+          <p class="popup__description">
+            -пляжные полотенца и принадлежности (бесплатно)
+          </p>
+        </li>
+        <li class="popup__item">
+          <p class="popup__description">
+            -трансфер бесплатно (условия уточняйте у оператора)
+          </p>
+        </li>
+        <li class="popup__item">
+          <p class="popup__description">-зона барбекю (бесплатно)</p>
+        </li>
+        <li class="popup__item">
+          <p class="popup__description">-бассейн для детей (бесплатно)</p>
+        </li>
+        <li class="popup__item">
+          <p class="popup__description">-завтрак (бесплатно)</p>
+        </li>
+        <li class="popup__item">
+          <p class="popup__description">-кофемашина (бесплатно)</p>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-    <div class="popup-main__wrapper">
-      <div class="popup-main">
-        <div class="popup-main__row">
-          <div class="popup-main__close">
-            <a href="#top"><img src="img/close.svg" alt="" /></a>
-          </div>
-          <div class="popup-main__row_header">
-            <h2>Заполните данные</h2>
-          </div>
-          <div class="popup-main__row_form">
-            <form
-              class="SendMail formed"
-              method="post"
-              enctype="multipart/form-data"
-            >
-              <input
-                style="display: none"
-                type="text"
-                id="what"
-                name="Номер отеля"
-              />
-              <!------------------------------------------------>
-              <div class="popup-main__form_name">
-                <label for=""> Имя* </label>
-                <input
-                  type="text"
-                  required
-                  name="Имя"
-                  placeholder="Введите имя"
-                />
-              </div>
-              <div class="popup-main__form_phone">
-                <label for=""> Телефон* </label>
-                <input
-                  type="tel"
-                  required
-                  name="Телефон"
-                  placeholder="Введите номер"
-                />
-              </div>
-              <div class="popup-main__form_email">
-                <label for=""> Email* </label>
-                <input type="email" name="Email" placeholder="Введите номер" />
-              </div>
-              <div class="popup-main__form_select">
-                <label for=""> Номер отеля </label>
-                <select id="selectNumber" name="Номеря отеля">
-                  <option
-                    value="Трёхместный (Эконом-класс с двуспальной кроватью)"
-                  >
-                    Трёхместный (Эконом-класс с двуспальной кроватью)
-                  </option>
-                  <option
-                    value="Двухместный (Комфорт-класс с двуспальной кроватью)"
-                  >
-                    Двухместный (Комфорт-класс с двуспальной кроватью)
-                  </option>
-                  <option
-                    value="Двухместный (Комфорт-класс с двумя односпальными кроватьями)"
-                  >
-                    Двухместный (Комфорт-класс с двумя односпальными кроватьями)
-                  </option>
-                  <option
-                    value="Трёхместный (Комфорт-класс с двуспальной кроватью)"
-                  >
-                    Трёхместный (Комфорт-класс с двуспальной кроватью)
-                  </option>
-                  <option value="De Luxe (Делюкс четырехместный)">
-                    De Luxe (Делюкс четырехместный)
-                  </option>
-                  <option
-                    value="Апартаменты (Двухкомнатные апартаменты люкс с балконом)"
-                  >
-                    Апартаменты (Двухкомнатные апартаменты люкс с балконом)
-                  </option>
-                </select>
-              </div>
-              <button type="submit">Отправить</button>
-            </form>
-          </div>
+  <div class="popup-main__wrapper">
+    <div class="popup-main">
+      <div class="popup-main__row">
+        <div class="popup-main__close">
+          <a href="#top"><img src="img/close.svg" alt="" /></a>
+        </div>
+        <div class="popup-main__row_header">
+          <h2>Заполните данные</h2>
+        </div>
+        <div class="popup-main__row_form">
+          <form class="SendMail formed" method="post" enctype="multipart/form-data">
+            <input style="display: none" type="text" id="what" name="Номер отеля" />
+            <!------------------------------------------------>
+            <div class="popup-main__form_name">
+              <label for=""> Имя* </label>
+              <input type="text" required name="Имя" placeholder="Введите имя" />
+            </div>
+            <div class="popup-main__form_phone">
+              <label for=""> Телефон* </label>
+              <input type="tel" required name="Телефон" placeholder="Введите номер" />
+            </div>
+            <div class="popup-main__form_email">
+              <label for=""> Email* </label>
+              <input type="email" name="Email" placeholder="Введите номер" />
+            </div>
+            <div class="popup-main__form_select">
+              <label for=""> Номер отеля </label>
+              <select id="selectNumber" name="Номеря отеля">
+                <option value="Трёхместный (Эконом-класс с двуспальной кроватью)">
+                  Трёхместный (Эконом-класс с двуспальной кроватью)
+                </option>
+                <option value="Двухместный (Комфорт-класс с двуспальной кроватью)">
+                  Двухместный (Комфорт-класс с двуспальной кроватью)
+                </option>
+                <option value="Двухместный (Комфорт-класс с двумя односпальными кроватьями)">
+                  Двухместный (Комфорт-класс с двумя односпальными кроватьями)
+                </option>
+                <option value="Трёхместный (Комфорт-класс с двуспальной кроватью)">
+                  Трёхместный (Комфорт-класс с двуспальной кроватью)
+                </option>
+                <option value="De Luxe (Делюкс четырехместный)">
+                  De Luxe (Делюкс четырехместный)
+                </option>
+                <option value="Апартаменты (Двухкомнатные апартаменты люкс с балконом)">
+                  Апартаменты (Двухкомнатные апартаменты люкс с балконом)
+                </option>
+              </select>
+            </div>
+            <button type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </div>
-    <script
-      class="query"
-      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  </div>
+  <script class="query" src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
