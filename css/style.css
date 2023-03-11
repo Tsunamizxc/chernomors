@@ -2696,7 +2696,7 @@ swiper-slide img {
     padding: 11px 11px;
   }
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 792px) {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
   body {
     font-family: "Montserrat";
@@ -3843,7 +3843,7 @@ swiper-slide img {
     padding: 11px 11px;
   }
 }
-@media (min-width: 768px) and (max-width: 1049px) {
+@media (min-width: 793px) and (max-width: 1049px) {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
   body {
     font-family: "Montserrat";

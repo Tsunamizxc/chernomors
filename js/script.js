@@ -657,7 +657,6 @@ document.addEventListener("DOMContentLoaded", () => {
     opts = sel.querySelectorAll("option");
 
   function popupNumber() {
-    console.log(whatSlide);
     let { name } = numbers[whatSlide];
     input.value = name;
     sel.selectedIndex = whatSlide;
