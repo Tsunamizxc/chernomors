@@ -879,3 +879,10 @@ BguardPM.addEventListener("click", function () {
   BguardPM.classList.remove("ons");
   document.body.style.overflow = "auto";
 });
+// reload после отправки
+let formeds = document.querySelectorAll(".formed");
+for(let i = 0;i < formeds.length;i++){
+formeds[i].onsubmit = function() {
+  location.reload(true);
+}
+}

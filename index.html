@@ -505,29 +505,43 @@
             <h2>Заполните данные</h2>
           </div>
           <div class="popup-main__row_form">
-            <form action="">
+            <form
+              class="SendMail formed"
+              method="post"
+              enctype="multipart/form-data"
+            >
               <input
                 style="display: none"
                 type="text"
                 id="what"
-                name="NumbersHotels"
+                name="Номер отеля"
               />
               <!------------------------------------------------>
               <div class="popup-main__form_name">
                 <label for=""> Имя* </label>
-                <input type="text" required />
+                <input
+                  type="text"
+                  required
+                  name="Имя"
+                  placeholder="Введите имя"
+                />
               </div>
               <div class="popup-main__form_phone">
                 <label for=""> Телефон* </label>
-                <input type="tel" required />
+                <input
+                  type="tel"
+                  required
+                  name="Телефон"
+                  placeholder="Введите номер"
+                />
               </div>
               <div class="popup-main__form_email">
                 <label for=""> Email* </label>
-                <input type="email" />
+                <input type="email" name="Email" placeholder="Введите номер" />
               </div>
               <div class="popup-main__form_select">
                 <label for=""> Номер отеля </label>
-                <select id="selectNumber" name="numberhotel">
+                <select id="selectNumber" name="Номеря отеля">
                   <option
                     value="Трёхместный (Эконом-класс с двуспальной кроватью)"
                   >
@@ -577,6 +591,7 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
