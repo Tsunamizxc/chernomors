@@ -70,11 +70,11 @@ body {
 
 @keyframes slideBg {
     0% {
-        background-image: url("../img/main/Heading/bg.png");
+        background-image: url("../img/main/Heading/bg.webp");
     }
 
     33% {
-        background-image: url("../img/main/Heading/bg1.png");
+        background-image: url("../img/main/Heading/bg1.jpg");
     }
 }
 
@@ -86,7 +86,7 @@ body {
     backface-visibility: hidden;
     animation: slideBg 8s linear infinite 0s;
     animation-timing-function: ease-in-out;
-    background-image: url("../img/main/Heading/bg.png");
+    background-image: url("../img/main/Heading/bg.webp");
     &__header {
         margin-top: 116px;
         display: flex;
