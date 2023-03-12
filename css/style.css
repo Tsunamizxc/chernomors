@@ -921,7 +921,7 @@ swiper-slide img {
   position: absolute !important;
   right: 46.9% !important;
   bottom: 0px !important;
-  background-image: url("img/next.svg") !important;
+  background-image: url("../img/next.svg") !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
@@ -942,7 +942,7 @@ swiper-slide img {
   left: 46.9% !important;
   bottom: 0px !important;
   background-color: none !important;
-  background-image: url("img/prev.svg") !important;
+  background-image: url("../img/prev.svg") !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
