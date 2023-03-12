@@ -583,16 +583,16 @@
                   </option>
                 </select>
               </div>
-              <p id="dataError" style="color: red; display: none">
-                Ошибка дат(не корректно выбраны даты)
-              </p>
-              <div class="popup-main__form_email" id="dataOpen">
-                <label for="">Дата заезда</label>
-                <input type="date" name="Дата заезда" />
-              </div>
-              <div class="popup-main__form_email" id="dataExit">
-                <label for="">Дата выезда</label>
-                <input type="date" />
+              <div class="popup-main__data-wrapper">
+                <p id="dataError">Неверно выбраны даты</p>
+                <div class="popup-main__form_email" id="dataOpen">
+                  <label for="">Дата заезда</label>
+                  <input type="date" name="Дата заезда" />
+                </div>
+                <div class="popup-main__form_email" id="dataExit">
+                  <label for="">Дата выезда</label>
+                  <input type="date" />
+                </div>
               </div>
               <button type="submit">Отправить</button>
             </form>

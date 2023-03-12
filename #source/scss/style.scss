@@ -1369,6 +1369,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: white;
   opacity: 0;
 }
+.popup-main__data-wrapper {
+  position: relative;
+}
+
+#dataError {
+  color: red;
+  display: none;
+  margin-bottom: 10px;
+}
 @media (min-width: 320px) and (max-width: 479px) {
   @import "_320px";
 }
