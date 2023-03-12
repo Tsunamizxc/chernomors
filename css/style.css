@@ -1479,6 +1479,10 @@ swiper-slide img {
   margin-bottom: 15px;
 }
 
+.overflov {
+  overflow-y: hidden;
+}
+
 @media (min-width: 320px) and (max-width: 479px) {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
   body {
@@ -1865,6 +1869,9 @@ swiper-slide img {
     margin-right: 10px;
   }
   /* tabs */
+  .btnss a {
+    margin-bottom: 15px;
+  }
   .tabs {
     display: -webkit-box;
     display: -ms-flexbox;

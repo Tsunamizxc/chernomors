@@ -695,23 +695,28 @@ document.addEventListener("DOMContentLoaded", () => {
 let burgerMenu = document.querySelector(".burger__menu");
 let burgerList = burgerMenu.querySelector(".burger-list");
 let burgerItem = burgerMenu.querySelectorAll(".burger-menu-item");
+let burgerClose = document.querySelector(".burger-btn");
 const Bguard = document.querySelector(".bGuard");
 function burgerBtn(icon) {
   icon.classList.toggle("change");
   burgerList.classList.toggle("burger-active");
   Bguard.classList.toggle("on");
+  document.body.classList.toggle("overflov");
 }
 let burgerBts = document.querySelector(".burger-btn");
 Bguard.addEventListener("click", function () {
   burgerBts.classList.remove("change");
   burgerList.classList.toggle("burger-active");
   Bguard.classList.toggle("on");
+  document.body.style.overflow = "auto";
 });
+
 burgerItem.forEach((key) => {
   key.addEventListener("click", function () {
     burgerBts.classList.remove("change");
     burgerList.classList.toggle("burger-active");
     Bguard.classList.toggle("on");
+    document.body.style.overflow = "auto";
   });
 });
 // buger-menu finish

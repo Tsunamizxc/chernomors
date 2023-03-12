@@ -373,7 +373,11 @@ body {
 }
 
 /* tabs */
-
+.btnss {
+    a {
+        margin-bottom: 15px;
+    }
+}
 .tabs {
     display: flex;
     flex-direction: column;

@@ -1289,7 +1289,9 @@ swiper-slide img {
     }
   }
 }
-
+.overflov {
+  overflow-y: hidden;
+}
 @media (min-width: 320px) and (max-width: 479px) {
   @import "_320px";
 }
