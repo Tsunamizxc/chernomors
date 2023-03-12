@@ -925,3 +925,17 @@ for (let i = 0; i < formeds.length; i++) {
   var node = document.getElementsByTagName("head")[0];
   node.appendChild(script);
 })();
+// для попап-мейн даты
+const vhod = document.querySelector("#dataOpen input"),
+  exit = document.querySelector("#dataExit input"),
+  dataError = document.querySelector("#dataError");
+
+document.addEventListener("change", () => {
+  if (vhod.value && exit.value) {
+    if (vhod.value > exit.value) {
+      dataError.style.display = "block";
+    } else {
+      dataError.style.display = "none";
+    }
+  }
+});

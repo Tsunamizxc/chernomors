@@ -1551,6 +1551,14 @@ swiper-slide img {
   overflow-y: hidden;
 }
 
+input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: 190px;
+  border: 2px solid #aaaaaa;
+  background: white;
+  opacity: 0;
+}
+
 @media (min-width: 320px) and (max-width: 479px) {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
   body {
