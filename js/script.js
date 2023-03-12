@@ -878,19 +878,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let pmBtn = document.querySelectorAll(".zabron");
 let popupMain = document.querySelector(".popup-main");
-let popupMainWrapper = document.querySelector(".popup-main__wrapper");
 let closeMB = document.querySelector(".popup-main__close");
-const BguardPM = document.querySelector(".bGuard-popup");
-const dataError = document.querySelector("#dataError");
-const popupMainField = popupMain.querySelectorAll("input");
+const BguardPM = document.querySelector(".bGuard-popup"),
+  popupMainField = popupMain.querySelectorAll("input"),
+  dataError = document.querySelector("#dataError"),
+  vhod = document.querySelector("#dataOpen input"),
+  exit = document.querySelector("#dataExit input");
+
 function clearValue() {
   popupMainField.forEach((item) => (item.value = ""));
   dataError.style.display = "none";
+  vhod.style.borderColor = "";
+  exit.style.borderColor = "";
 }
+
+document.addEventListener("change", () => {
+  if (vhod.value && exit.value) {
+    if (vhod.value > exit.value) {
+      dataError.style.display = "block";
+      vhod.style.borderColor = "red";
+      exit.style.borderColor = "red";
+    } else {
+      dataError.style.display = "none";
+      vhod.style.borderColor = "";
+      exit.style.borderColor = "";
+    }
+  }
+});
+
 pmBtn.forEach((pmBtns) => {
   pmBtns.addEventListener("click", function () {
     popupMain.style.display = "block";
-    popupMainWrapper.style.display = "block";
     BguardPM.classList.add("ons");
     document.body.style.overflow = "hidden";
   });
@@ -909,13 +927,6 @@ BguardPM.addEventListener("click", function () {
   BguardPM.classList.remove("ons");
   document.body.style.overflow = "auto";
 });
-// reload после отправки
-let formeds = document.querySelectorAll(".formed");
-for (let i = 0; i < formeds.length; i++) {
-  formeds[i].onsubmit = function () {
-    location.reload(true);
-  };
-}
 // кнопка 101Отели
 (function () {
   var script = document.createElement("script"),
@@ -930,15 +941,3 @@ for (let i = 0; i < formeds.length; i++) {
   node.appendChild(script);
 })();
 // для попап-мейн даты
-const vhod = document.querySelector("#dataOpen input");
-exit = document.querySelector("#dataExit input");
-
-document.addEventListener("change", () => {
-  if (vhod.value && exit.value) {
-    if (vhod.value > exit.value) {
-      dataError.style.display = "block";
-    } else {
-      dataError.style.display = "none";
-    }
-  }
-});
