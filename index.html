@@ -111,7 +111,18 @@
             </p>
           </div>
           <div class="main-page__header_button">
-            <a href="#NandC">Забронировать</a>
+            <div class="main-page__header_button-one">
+              <a href="#NandC">Забронировать</a>
+            </div>
+
+            <div class="main-page__header_button-two">
+              <a
+                target="_blank"
+                href="https://101hotels.com/main/cities/sochi/mini-otel_chernomor.html"
+                >101Hotels <br />
+                рекомендует</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -289,18 +300,6 @@
                   >Забронировать</a
                 >
               </div>
-              <div class="tabs__box-btns-hotels">
-                <a
-                  target="_blank"
-                  id="hotels101_partner_widget_233"
-                  href="https://101hotels.com/main/cities/sochi/mini-otel_chernomor.html"
-                >
-                  <img
-                    src="https://101hotels.com/images/banner/101hotels_recommend4.png"
-                    alt="101hotels.com рекомендует Черномор"
-                  />
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -354,7 +353,7 @@
             </div>
           </div>
           <div class="contacts__content_hostel">
-            <p class="content-name">Респешен отеля</p>
+            <p class="content-name">Ресепшен отеля</p>
             <div class="hostel_row">
               <div class="hostel-one">
                 <img src="img/telephone.svg" alt="" /><a href="tel:89394444411">
@@ -583,6 +582,17 @@
                     Апартаменты (Двухкомнатные апартаменты люкс с балконом)
                   </option>
                 </select>
+              </div>
+              <p id="dataError" style="color: red; display: none">
+                Ошибка дат(не корректно выбраны даты)
+              </p>
+              <div class="popup-main__form_email" id="dataOpen">
+                <label for="">Дата заезда</label>
+                <input type="date" name="Дата заезда" />
+              </div>
+              <div class="popup-main__form_email" id="dataExit">
+                <label for="">Дата выезда</label>
+                <input type="date" />
               </div>
               <button type="submit">Отправить</button>
             </form>

@@ -382,7 +382,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "вид во внутренний дворик",
         "балкон",
         "уличная мебель",
-        "уличная мебель",
       ],
     },
     {
@@ -410,7 +409,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description: [
         "Площадь номера 39м2",
         "Двуспальная кровать, кровать King-size и диван-кровать",
-        "4 спальных места",
+        "6 спальных места",
       ],
       inRoom: [
         "балкон",
@@ -426,10 +425,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "обогреватель",
         "кондиционер",
         "индивидуальные шкафчики",
-      ],
-      inFloor: [
         "душ",
         "туалет",
+      ],
+      inFloor: [
         "душ-поддон",
         "полотенцесушитель",
         "полочки для косметических средств",
@@ -876,10 +875,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // popup finish
 // popup-main
+
 let pmBtn = document.querySelectorAll(".zabron");
 let popupMain = document.querySelector(".popup-main");
 let closeMB = document.querySelector(".popup-main__close");
 const BguardPM = document.querySelector(".bGuard-popup");
+const popupMainField = popupMain.querySelectorAll("input");
+function clearValue() {
+  popupMainField.forEach((item) => (item.value = ""));
+}
 pmBtn.forEach((pmBtns) => {
   pmBtns.addEventListener("click", function () {
     popupMain.style.display = "block";
@@ -892,9 +896,11 @@ closeMB.addEventListener("click", function () {
   popupMain.style.display = "none";
   BguardPM.classList.remove("ons");
   document.body.style.overflow = "auto";
+  clearValue();
 });
 
 BguardPM.addEventListener("click", function () {
+  clearValue();
   popupMain.style.display = "none";
   BguardPM.classList.remove("ons");
   document.body.style.overflow = "auto";
