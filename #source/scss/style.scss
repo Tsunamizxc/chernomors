@@ -443,8 +443,17 @@ body {
 
 .tabs__box-btns {
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
-
+.btnss {
+  a {
+    margin-right: 10px;
+  }
+}
+.tabs__box-btns-hotels {
+  margin-top: 15px;
+}
 .tabs__box-btns > .btn:not(:last-child) {
   margin-right: 25px;
 }

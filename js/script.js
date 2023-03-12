@@ -602,8 +602,8 @@ document.addEventListener("DOMContentLoaded", () => {
     renderSlider() {
       let slider = document.querySelectorAll(".mySwiper swiper-slide img"),
         sliderNav = document.querySelectorAll(".mySwiper2 swiper-slide img"),
-        sliderBlocks = document.querySelectorAll('.mySwiper swiper-slide'),
-        sliderNavBlocks = document.querySelectorAll('.mySwiper swiper-slide');
+        sliderBlocks = document.querySelectorAll(".mySwiper swiper-slide"),
+        sliderNavBlocks = document.querySelectorAll(".mySwiper swiper-slide");
       slider.forEach((item, i) => {
         item.src = this.imgSrc[i];
       });
@@ -613,26 +613,29 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       sliderBlocks.forEach((item, i) => {
-        item.setAttribute('data-swiper-slide-index', i);
-        item.setAttribute('aria-label', `${i + 1} / 4`);
+        item.setAttribute("data-swiper-slide-index", i);
+        item.setAttribute("aria-label", `${i + 1} / 4`);
       });
 
       sliderNavBlocks.forEach((item, i) => {
-        item.setAttribute('data-swiper-slide-index', i);
+        item.setAttribute("data-swiper-slide-index", i);
       });
     }
   }
-  const bodyDocs = document.querySelector("body");
-  const detailedBtn = document.querySelector("#detailed"),
+  const bodyDocs = document.querySelector("body"),
+    detailedBtn = document.querySelector("#detailed"),
     parentsWrapper = document.querySelector(".detailed-number__wrapper"),
     parents = document.querySelector(".detailed-number"),
     detailedBtnClose = document.querySelector(".detailed-number__close"),
     sectionNumbers = document.querySelector(".numbers"),
     sliderParents = document.querySelector(".detailed-slider"),
-    swiper = document.querySelector('.mySwiper').swiper;
+    swiper = document.querySelector(".mySwiper").swiper,
+    swiperNav = document.querySelector(".mySwiper2").swiper;
 
   detailedBtn.addEventListener("click", (e) => {
     e.preventDefault();
+    swiper.slideTo(0, 1, false);
+    swiperNav.slideTo(0, 1, false);
     parents.style.display = "block";
     bodyDocs.style.overflowY = "hidden";
     let { name, money, imgSrc, description, inRoom, inFloor, inTerritory } =
@@ -896,5 +899,18 @@ let formeds = document.querySelectorAll(".formed");
 for (let i = 0; i < formeds.length; i++) {
   formeds[i].onsubmit = function () {
     location.reload(true);
-  }
+  };
 }
+// кнопка 101Отели
+(function () {
+  var script = document.createElement("script"),
+    generated_id = 233;
+  script.type = "text/javascript";
+  script.async = true;
+  script.src =
+    "https://101hotels.com/widget/generator/" +
+    generated_id +
+    "/658820/t-5/opacity-hover";
+  var node = document.getElementsByTagName("head")[0];
+  node.appendChild(script);
+})();
