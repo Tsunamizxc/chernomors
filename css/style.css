@@ -590,7 +590,7 @@ body {
 }
 
 .detailed-number__close {
-  position: absolute;
+  position: fixed;
   right: 50px;
   top: 50px;
   width: 30px;
