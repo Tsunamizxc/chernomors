@@ -376,12 +376,16 @@ body {
 .btnss {
     a {
         margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 .tabs {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 500px;
 }
 
 .tab {
@@ -955,6 +959,7 @@ body {
 .popup__close {
     width: 15px;
     height: 15px;
+    position: fixed;
 }
 
 .popup__description {

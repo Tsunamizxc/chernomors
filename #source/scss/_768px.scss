@@ -872,7 +872,9 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
+.popup__close {
+    position: fixed;
+}
 .popup__heading {
     font-size: 26px;
     line-height: 32px;

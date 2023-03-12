@@ -359,6 +359,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 370px;
 }
 
 .tab {
@@ -852,7 +853,9 @@ body {
   height: 90px;
   margin-bottom: 36px;
 }
-
+.popup__close {
+  position: fixed;
+}
 .popup__description {
   font-size: 20px;
 }
