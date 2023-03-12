@@ -1376,7 +1376,7 @@ swiper-slide img {
 }
 .popup-main__row {
   background: #ffffff;
-  padding: 60px 80px;
+  padding: 50px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1396,8 +1396,8 @@ swiper-slide img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 17px;
   color: #000000;
 }
 .popup-main__row_form form {
@@ -1415,10 +1415,10 @@ swiper-slide img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 17px;
   color: #ffffff;
-  padding: 20px 60px;
+  padding: 11px 23px;
   background: #1e1e1e;
   border-radius: 15px;
 }
@@ -1435,23 +1435,23 @@ swiper-slide img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 17px;
   color: #000000;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .popup-main__form_name input {
-  max-width: 386px;
-  border: 3px solid #aaaaaa;
+  max-width: 190px;
+  border: 2px solid #aaaaaa;
   border-radius: 15px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 15px;
   color: #b6b6b6;
-  padding: 21px 18px;
-  margin-bottom: 15px;
+  padding: 11px 11px;
+  margin-bottom: 10px;
 }
 .popup-main__form_phone {
   display: -webkit-box;
@@ -1466,23 +1466,23 @@ swiper-slide img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 17px;
   color: #000000;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .popup-main__form_phone input {
-  max-width: 386px;
-  border: 3px solid #aaaaaa;
+  max-width: 190px;
+  border: 2px solid #aaaaaa;
   border-radius: 15px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 15px;
   color: #b6b6b6;
-  padding: 21px 18px;
-  margin-bottom: 15px;
+  padding: 11px 11px;
+  margin-bottom: 10px;
 }
 .popup-main__form_email {
   display: -webkit-box;
@@ -1497,23 +1497,23 @@ swiper-slide img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 17px;
   color: #000000;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .popup-main__form_email input {
-  max-width: 386px;
-  border: 3px solid #aaaaaa;
+  max-width: 190px;
+  border: 2px solid #aaaaaa;
   border-radius: 15px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 15px;
   color: #b6b6b6;
-  padding: 21px 18px;
-  margin-bottom: 15px;
+  padding: 11px 11px;
+  margin-bottom: 10px;
 }
 .popup-main__form_select {
   display: -webkit-box;
@@ -1528,23 +1528,37 @@ swiper-slide img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 24px;
   color: #000000;
   margin-bottom: 15px;
 }
 .popup-main__form_select select {
-  max-width: 426px;
-  border: 3px solid #aaaaaa;
+  max-width: 206px;
+  border: 2px solid #aaaaaa;
+  border-radius: 15px;
+  border: 2px solid #aaaaaa;
   border-radius: 15px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 15px;
   color: #b6b6b6;
-  padding: 21px 18px;
+  padding: 11px 11px;
   margin-bottom: 15px;
+}
+.popup-main__form_select select option {
+  max-width: 100px;
+  border: 2px solid #aaaaaa;
+  border-radius: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #b6b6b6;
+  padding: 11px 11px;
 }
 
 .overflov {
@@ -2697,7 +2711,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #000000;
   }
@@ -2829,7 +2843,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 24px;
     color: #000000;
     margin-bottom: 15px;
@@ -3873,10 +3887,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .popup-main__wrapper {
     z-index: 250;
     position: fixed;
-    top: 70px;
-    left: 50%;
+    top: 50px;
     height: 100%;
     overflow: scroll;
+    left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -3888,7 +3902,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .popup-main__row {
     background: #ffffff;
-    padding: 30px 40px;
+    padding: 30px 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3909,7 +3923,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 17px;
     color: #000000;
   }
@@ -3928,10 +3942,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #ffffff;
-    padding: 8px 23px;
+    padding: 11px 23px;
     background: #1e1e1e;
     border-radius: 15px;
   }
@@ -3948,7 +3962,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #000000;
     margin-bottom: 10px;
@@ -3979,7 +3993,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #000000;
     margin-bottom: 10px;
@@ -4010,7 +4024,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #000000;
     margin-bottom: 10px;
@@ -4041,7 +4055,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     color: #000000;
     margin-bottom: 15px;
@@ -5066,7 +5080,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .popup-main__wrapper {
     z-index: 250;
     position: fixed;
-    top: 70px;
+    top: 50px;
     height: 100%;
     overflow: scroll;
     left: 50%;
@@ -5081,7 +5095,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .popup-main__row {
     background: #ffffff;
-    padding: 30px 40px;
+    padding: 30px 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5102,7 +5116,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 17px;
     color: #000000;
   }
@@ -5121,10 +5135,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #ffffff;
-    padding: 8px 23px;
+    padding: 11px 23px;
     background: #1e1e1e;
     border-radius: 15px;
   }
@@ -5141,7 +5155,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #000000;
     margin-bottom: 10px;
@@ -5172,7 +5186,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #000000;
     margin-bottom: 10px;
@@ -5203,7 +5217,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #000000;
     margin-bottom: 10px;
@@ -5234,7 +5248,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     color: #000000;
     margin-bottom: 15px;
@@ -6218,7 +6232,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .popup-main__wrapper {
     z-index: 250;
     position: fixed;
-    top: 70px;
+    top: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -6383,7 +6397,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 24px;
     color: #000000;
     margin-bottom: 15px;
@@ -7354,7 +7368,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .popup-main__wrapper {
     z-index: 250;
     position: fixed;
-    top: 70px;
+    top: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -7519,7 +7533,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 24px;
     color: #000000;
     margin-bottom: 15px;
@@ -8434,7 +8448,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .popup-main__wrapper {
     z-index: 250;
     position: fixed;
-    top: 70px;
+    top: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -8447,7 +8461,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .popup-main__row {
     background: #ffffff;
-    padding: 30px 40px;
+    padding: 30px 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8467,7 +8481,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 17px;
     color: #000000;
   }
@@ -8599,7 +8613,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 24px;
     color: #000000;
     margin-bottom: 15px;

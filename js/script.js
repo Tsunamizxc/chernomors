@@ -878,15 +878,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let pmBtn = document.querySelectorAll(".zabron");
 let popupMain = document.querySelector(".popup-main");
+let popupMainWrapper = document.querySelector(".popup-main__wrapper");
 let closeMB = document.querySelector(".popup-main__close");
 const BguardPM = document.querySelector(".bGuard-popup");
+const dataError = document.querySelector("#dataError");
 const popupMainField = popupMain.querySelectorAll("input");
 function clearValue() {
   popupMainField.forEach((item) => (item.value = ""));
+  dataError.style.display = "none";
 }
 pmBtn.forEach((pmBtns) => {
   pmBtns.addEventListener("click", function () {
     popupMain.style.display = "block";
+    popupMainWrapper.style.display = "block";
     BguardPM.classList.add("ons");
     document.body.style.overflow = "hidden";
   });
@@ -926,9 +930,8 @@ for (let i = 0; i < formeds.length; i++) {
   node.appendChild(script);
 })();
 // для попап-мейн даты
-const vhod = document.querySelector("#dataOpen input"),
-  exit = document.querySelector("#dataExit input"),
-  dataError = document.querySelector("#dataError");
+const vhod = document.querySelector("#dataOpen input");
+exit = document.querySelector("#dataExit input");
 
 document.addEventListener("change", () => {
   if (vhod.value && exit.value) {

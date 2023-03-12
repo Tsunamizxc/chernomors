@@ -953,10 +953,10 @@ body {
     &__wrapper {
         z-index: 250;
         position: fixed;
-        top: 70px;
-        left: 50%;
+        top: 50px;
         height: 100%;
         overflow: scroll;
+        left: 50%;
         transform: translateX(-50%);
     }
     &__close {
@@ -966,7 +966,7 @@ body {
     }
     &__row {
         background: #ffffff;
-        padding: 30px 40px;
+        padding: 30px 70px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -979,7 +979,7 @@ body {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 20px;
                 line-height: 17px;
 
                 color: #000000;
@@ -996,12 +996,12 @@ body {
                     font-family: "Montserrat";
                     font-style: normal;
                     font-weight: 600;
-                    font-size: 14px;
+                    font-size: 18px;
                     line-height: 17px;
 
                     color: #ffffff;
 
-                    padding: 8px 23px;
+                    padding: 11px 23px;
                     background: #1e1e1e;
                     border-radius: 15px;
                 }
@@ -1018,7 +1018,7 @@ body {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 18px;
                 line-height: 17px;
 
                 color: #000000;
@@ -1049,7 +1049,7 @@ body {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 18px;
                 line-height: 17px;
 
                 color: #000000;
@@ -1080,7 +1080,7 @@ body {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 18px;
                 line-height: 17px;
 
                 color: #000000;
@@ -1111,7 +1111,7 @@ body {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 600;
-                font-size: 20px;
+                font-size: 18px;
                 line-height: 24px;
 
                 color: #000000;

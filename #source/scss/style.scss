@@ -1148,6 +1148,7 @@ swiper-slide img {
   }
 }
 
+// popup-main start
 @keyframes popupOpens {
   0% {
     transform: scale(0.5);
@@ -1174,7 +1175,7 @@ swiper-slide img {
   }
   &__row {
     background: #ffffff;
-    padding: 60px 80px;
+    padding: 50px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1186,8 +1187,8 @@ swiper-slide img {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
-        font-size: 30px;
-        line-height: 37px;
+        font-size: 24px;
+        line-height: 17px;
 
         color: #000000;
       }
@@ -1203,11 +1204,12 @@ swiper-slide img {
           font-family: "Montserrat";
           font-style: normal;
           font-weight: 600;
-          font-size: 24px;
-          line-height: 29px;
+          font-size: 20px;
+          line-height: 17px;
 
           color: #ffffff;
-          padding: 20px 60px;
+
+          padding: 11px 23px;
           background: #1e1e1e;
           border-radius: 15px;
         }
@@ -1224,25 +1226,27 @@ swiper-slide img {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 20px;
+        line-height: 17px;
 
         color: #000000;
-        margin-bottom: 15px;
+
+        margin-bottom: 10px;
       }
       input {
-        max-width: 386px;
-        border: 3px solid #aaaaaa;
+        max-width: 190px;
+
+        border: 2px solid #aaaaaa;
         border-radius: 15px;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 15px;
 
         color: #b6b6b6;
-        padding: 21px 18px;
-        margin-bottom: 15px;
+        padding: 11px 11px;
+        margin-bottom: 10px;
       }
     }
 
@@ -1253,25 +1257,27 @@ swiper-slide img {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 20px;
+        line-height: 17px;
 
         color: #000000;
-        margin-bottom: 15px;
+
+        margin-bottom: 10px;
       }
       input {
-        max-width: 386px;
-        border: 3px solid #aaaaaa;
+        max-width: 190px;
+
+        border: 2px solid #aaaaaa;
         border-radius: 15px;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 15px;
 
         color: #b6b6b6;
-        padding: 21px 18px;
-        margin-bottom: 15px;
+        padding: 11px 11px;
+        margin-bottom: 10px;
       }
     }
 
@@ -1282,25 +1288,27 @@ swiper-slide img {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 20px;
+        line-height: 17px;
 
         color: #000000;
-        margin-bottom: 15px;
+
+        margin-bottom: 10px;
       }
       input {
-        max-width: 386px;
-        border: 3px solid #aaaaaa;
+        max-width: 190px;
+
+        border: 2px solid #aaaaaa;
         border-radius: 15px;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 15px;
 
         color: #b6b6b6;
-        padding: 21px 18px;
-        margin-bottom: 15px;
+        padding: 11px 11px;
+        margin-bottom: 10px;
       }
     }
 
@@ -1311,29 +1319,45 @@ swiper-slide img {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 20px;
+        line-height: 24px;
 
         color: #000000;
         margin-bottom: 15px;
       }
       select {
-        max-width: 426px;
-        border: 3px solid #aaaaaa;
+        max-width: 206px;
+        border: 2px solid #aaaaaa;
+        border-radius: 15px;
+        border: 2px solid #aaaaaa;
         border-radius: 15px;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 15px;
 
         color: #b6b6b6;
-        padding: 21px 18px;
+        padding: 11px 11px;
         margin-bottom: 15px;
+        option {
+          max-width: 100px;
+          border: 2px solid #aaaaaa;
+          border-radius: 15px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+
+          color: #b6b6b6;
+          padding: 11px 11px;
+        }
       }
     }
   }
 }
+
 .overflov {
   overflow-y: hidden;
 }
