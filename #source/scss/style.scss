@@ -1364,11 +1364,14 @@ swiper-slide img {
 // для попап-мейн даты
 input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
-  width: 190px;
+  left: 0;
+  padding: 10px;
+  width: 180px;
   border: 2px solid #aaaaaa;
   background: white;
   opacity: 0;
 }
+
 .popup-main__data-wrapper {
   position: relative;
 }
