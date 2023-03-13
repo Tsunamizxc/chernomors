@@ -451,7 +451,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 420px;
+  height: 580px;
 }
 
 .tab {
@@ -1381,13 +1381,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   margin-bottom: 10px;
 }
-@media (min-width: 320px) and (max-width: 479px) {
+@media (min-width: 320px) and (max-width: 479.6px) {
   @import "_320px";
 }
 @media (min-width: 480px) and (max-width: 792px) {
   @import "_768px";
 }
-@media (min-width: 793px) and (max-width: 1049px) {
+@media (min-width: 793px) and (max-width: 1049.6px) {
   @import "_1024px";
 }
 @media (min-width: 1050px) and (max-width: 1190px) {
