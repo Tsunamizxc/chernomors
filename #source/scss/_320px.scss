@@ -578,7 +578,7 @@ body {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 24px;
             line-height: 22px;
 
             color: #1e1e1e;
@@ -693,13 +693,51 @@ body {
         color: #000000;
     }
 }
+// usl start
 
+.usl {
+    margin-bottom: 50px;
+            &__row {
+    
+                &_heading {
+            margin-bottom: 20px;
+           
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 68px;
+        
+              color: #1e1e1e;
+            
+                }
+            }
+    
+            &__list {
+            }
+    
+            &__item {
+          margin-bottom: 15px;
+            }
+    
+            &__description {
+          font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+             
+        
+              color: #1e1e1e;
+            }
+    }
+    // usl finish
+    
 // review card finish
 .slick-next {
     position: absolute !important;
     right: 39% !important;
     bottom: 0px !important;
-    background-image: url(/img/next.svg) !important;
+    background-image: url("../img/next.svg") !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: cover !important;
@@ -721,7 +759,7 @@ body {
     left: 39% !important;
     bottom: 0px !important;
     background-color: none !important;
-    background-image: url(/img/prev.svg) !important;
+    background-image: url("../img/prev.svg") !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: cover !important;

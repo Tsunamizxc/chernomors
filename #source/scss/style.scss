@@ -204,10 +204,12 @@ body {
         &:hover {
           background: none;
           color: #ffffff;
+          animation: none;
         }
         &:active {
           background: #625555;
           border: 1px #625555 solid;
+          animation: none;
         }
       }
     }
@@ -728,6 +730,44 @@ swiper-slide img {
   }
 }
 // stocks finish
+// usl start
+
+.usl {
+margin-bottom: 50px;
+		&__row {
+
+			&_heading {
+        margin-bottom: 50px;
+       
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 68px;
+    
+          color: #1e1e1e;
+        
+			}
+		}
+
+		&__list {
+		}
+
+		&__item {
+      margin-bottom: 15px;
+		}
+
+		&__description {
+      font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+         
+    
+          color: #1e1e1e;
+		}
+}
+// usl finish
 // reviews start
 .reviews {
   &__header {
@@ -736,7 +776,7 @@ swiper-slide img {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
-      font-size: 56px;
+      font-size: 36px;
       line-height: 68px;
 
       color: #1e1e1e;
