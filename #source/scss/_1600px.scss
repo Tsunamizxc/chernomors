@@ -585,6 +585,7 @@ body {
     display: flex !important;
     flex-direction: column;
     align-items: center;
+    height: 600px;
     padding: 65px 140px;
     h2 {
         font-family: "Montserrat";
@@ -629,7 +630,7 @@ body {
 // review card finish
 .slick-next {
     position: absolute !important;
-    right: 46.1% !important;
+    right: 0% !important;
     bottom: 0px !important;
     background-image: url("../img/next.svg") !important;
     background-repeat: no-repeat !important;
@@ -638,7 +639,7 @@ body {
     width: 56px !important;
     height: 56px !important;
 
-    top: 94.5% !important;
+    top: 50% !important;
 
     &::before {
         display: none !important;
@@ -650,7 +651,7 @@ body {
 .slick-prev {
     z-index: 10;
     position: absolute !important;
-    left: 46.2% !important;
+    left: 0% !important;
     bottom: 0px !important;
     background-color: none !important;
     background-image: url("../img/prev.svg") !important;
@@ -659,7 +660,7 @@ body {
     background-size: cover !important;
     width: 56px !important;
     height: 56px !important;
-    top: 94.5% !important;
+    top: 50% !important;
     &::before {
         display: none !important;
     }
@@ -668,7 +669,7 @@ body {
     }
 }
 .contacts {
-    margin-top: 280px;
+    margin-top: 180px;
     &__row {
         display: flex;
         align-items: flex-end;

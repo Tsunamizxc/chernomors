@@ -622,6 +622,7 @@ body {
 .reviews {
     &__header {
         margin-bottom: 50px;
+        margin-left: 30px;
         h2 {
             margin-left: 20px;
             font-family: "Montserrat";
@@ -649,6 +650,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 25px 56px;
+    height: 350px;
+    overflow-y: scroll;
     h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -735,7 +738,7 @@ body {
 // review card finish
 .slick-next {
     position: absolute !important;
-    right: 39% !important;
+    right: 0% !important;
     bottom: 0px !important;
     background-image: url("../img/next.svg") !important;
     background-repeat: no-repeat !important;
@@ -744,7 +747,7 @@ body {
     width: 36px !important;
     height: 36px !important;
 
-    top: 96.8% !important;
+    top: 50% !important;
 
     &::before {
         display: none !important;
@@ -756,7 +759,7 @@ body {
 .slick-prev {
     z-index: 10;
     position: absolute !important;
-    left: 39% !important;
+    left: 0% !important;
     bottom: 0px !important;
     background-color: none !important;
     background-image: url("../img/prev.svg") !important;
@@ -765,7 +768,7 @@ body {
     background-size: cover !important;
     width: 36px !important;
     height: 36px !important;
-    top: 96.8% !important;
+    top: 50% !important;
     &::before {
         display: none !important;
     }

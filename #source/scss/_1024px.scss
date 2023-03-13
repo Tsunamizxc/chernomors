@@ -627,6 +627,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 65px 56px;
+  overflow-y:scroll ;
   h2 {
     font-family: "Montserrat";
     font-style: normal;
@@ -672,16 +673,16 @@ body {
 // review card finish
 .slick-next {
   position: absolute !important;
-  right: 41.6% !important;
+  right: 0% !important;
   bottom: 0px !important;
   background-image:url("../img/next.svg") !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
-  width: 56px !important;
-  height: 56px !important;
+  width: 36px !important;
+  height: 36px !important;
 
-  top: 95.8% !important;
+  top: 50% !important;
 
   &::before {
     display: none !important;
@@ -693,16 +694,16 @@ body {
 .slick-prev {
   z-index: 10;
   position: absolute !important;
-  left: 41.8% !important;
+  left: 0% !important;
   bottom: 0px !important;
   background-color: none !important;
   background-image: url("../img/prev.svg") !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
-  width: 56px !important;
-  height: 56px !important;
-  top: 95.8% !important;
+  width: 36px !important;
+  height: 36px !important;
+  top: 50% !important;
   &::before {
     display: none !important;
   }
