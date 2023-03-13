@@ -8,8 +8,8 @@ define("_ADMIN_EMAIL_", "semen.gnedenkov204@gmail.com");
  */
 define('_MAIL_TYPE_', 'SMTP');
 define('_SMTP_HOST_', 'smtp.timeweb.ru');
-define('_SMTP_LOGIN_', 'commercia@code-web.ru'); // email с которого будут отправлятся письма
-define('_SMTP_PASSWORD_', '3MYrP6qi'); // пароль от почты с которой будут отправлятся письма
+define('_SMTP_LOGIN_', 'chernomor-zayavki@chernomor-sochi.ru'); // email с которого будут отправлятся письма
+define('_SMTP_PASSWORD_', '5PYmW7aj'); // пароль от почты с которой будут отправлятся письма
 define('_SMTP_SECURE_', 'ssl'); // tls
 define('_SMTP_PORT_', 465);
 
