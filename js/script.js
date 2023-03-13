@@ -1005,8 +1005,8 @@ document.addEventListener("DOMContentLoaded", function () {
       return /[_\d]/.test(a) && i < val.length
         ? val.charAt(i++)
         : i >= val.length
-          ? ""
-          : a;
+        ? ""
+        : a;
     });
   };
   var phone_inputs = document.querySelectorAll("[data-phone-pattern]");
@@ -1016,4 +1016,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-// 
+//
+// reload
+let formeds = document.querySelectorAll(".formed");
+for (let i = 0; i < formeds.length; i++) {
+  formeds[i].onsubmit = function () {
+    location.reload(true);
+  };
+}
