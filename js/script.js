@@ -665,13 +665,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   // тута
   const btnBook = document.querySelector("#book"),
-    input = document.querySelector("#what"),
     sel = document.querySelector("#selectNumber"),
     opts = sel.querySelectorAll("option");
 
   function popupNumber() {
-    let { name } = numbers[whatSlide];
-    input.value = name;
     sel.selectedIndex = whatSlide;
   }
 
@@ -681,11 +678,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   popupNumber();
-
-  sel.addEventListener("change", () => {
-    let { name } = numbers[sel.selectedIndex];
-    input.value = name;
-  });
   // тута конец
 });
 // slider finish
@@ -922,13 +914,16 @@ const BguardPM = document.querySelector(".bGuard-popup"),
   popupMainField = popupMain.querySelectorAll("input"),
   dataError = document.querySelector("#dataError"),
   vhod = document.querySelector("#dataOpen input"),
-  exit = document.querySelector("#dataExit input");
+  exit = document.querySelector("#dataExit input"),
+  popupMainBtn = document.querySelector("#popup-main__btn");
 
 function clearValue() {
   popupMainField.forEach((item) => (item.value = ""));
   dataError.style.display = "none";
   vhod.style.borderColor = "";
   exit.style.borderColor = "";
+  popupMainBtn.disabled = false;
+  popupMainBtn.style.opacity = 1;
 }
 
 document.addEventListener("change", () => {
@@ -937,10 +932,14 @@ document.addEventListener("change", () => {
       dataError.style.display = "block";
       vhod.style.borderColor = "red";
       exit.style.borderColor = "red";
+      popupMainBtn.disabled = true;
+      popupMainBtn.style.opacity = 0.5;
     } else {
       dataError.style.display = "none";
       vhod.style.borderColor = "";
       exit.style.borderColor = "";
+      popupMainBtn.disabled = false;
+      popupMainBtn.style.opacity = 1;
     }
   }
 });

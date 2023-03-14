@@ -525,12 +525,6 @@
               method="post"
               enctype="multipart/form-data"
             >
-              <input
-                style="display: none"
-                type="text"
-                id="what"
-                name="Номер отеля"
-              />
               <!------------------------------------------------>
               <div class="popup-main__form_name">
                 <label for=""> Имя* </label>
@@ -540,7 +534,7 @@
                   placeholder="Ваше имя"
                   id="input-name"
                   onkeypress="noDigits(event)"
-                  name="name"
+                  name="Имя"
                   required
                 />
               </div>
@@ -548,7 +542,7 @@
                 <label for=""> Телефон* </label>
                 <input
                   type="tel"
-                  name="phone"
+                  name="Телефон"
                   placeholder="Ваш номер"
                   id="input-phone"
                   data-phone-pattern="+7 (___) ___-__-__"
@@ -559,7 +553,7 @@
                 <label for=""> Email* </label>
                 <input
                   id="inputEmail"
-                  type="email"
+                  type="Email"
                   placeholder="Ваш email"
                   name="email"
                   required
@@ -606,7 +600,7 @@
                 </div>
                 <div class="popup-main__form_email" id="dataExit">
                   <label for="">Дата выезда</label>
-                  <input type="date" required />
+                  <input type="date" name="Дата выезда" required />
                 </div>
               </div>
               <button type="submit">Отправить</button>
