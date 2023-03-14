@@ -523,41 +523,38 @@ body {
 
 .usl {
     margin-bottom: 50px;
-            &__row {
-    
-                &_heading {
+    &__row {
+        &_heading {
             margin-bottom: 50px;
-           
-              font-family: "Montserrat";
-              font-style: normal;
-              font-weight: 700;
-              font-size: 42px;
-              line-height: 68px;
-        
-              color: #1e1e1e;
-            
-                }
-            }
-    
-            &__list {
-            }
-    
-            &__item {
-          margin-bottom: 15px;
-            }
-    
-            &__description {
-          font-family: "Montserrat";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 24px;
-             
-        
-              color: #1e1e1e;
-            }
+
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 68px;
+
+            color: #1e1e1e;
+        }
     }
-    // usl finish
-    
+
+    &__list {
+    }
+
+    &__item {
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+
+        color: #1e1e1e;
+    }
+}
+// usl finish
+
 // reviews start
 .reviews {
     &__header {
@@ -805,6 +802,24 @@ body {
             }
         }
     }
+}
+.hostel-one {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.hostel-two {
+    display: flex;
+    align-items: center;
+}
+.bron-one {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.bron-two {
+    display: flex;
+    align-items: center;
 }
 // reviews finish
 // footer start
