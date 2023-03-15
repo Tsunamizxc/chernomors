@@ -305,7 +305,7 @@ body {
 
 /*  */
 .gray-wrapper {
-    margin-top: 167px;
+    margin-top: 107px;
     padding: 64px 0px;
     background: #f5f5f5;
 }
@@ -541,41 +541,38 @@ body {
 
 .usl {
     margin-bottom: 50px;
-            &__row {
-    
-                &_heading {
+    &__row {
+        &_heading {
             margin-bottom: 50px;
-           
-              font-family: "Montserrat";
-              font-style: normal;
-              font-weight: 700;
-              font-size: 36px;
-              line-height: 68px;
-        
-              color: #1e1e1e;
-            
-                }
-            }
-    
-            &__list {
-            }
-    
-            &__item {
-          margin-bottom: 15px;
-            }
-    
-            &__description {
-          font-family: "Montserrat";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 24px;
-             
-        
-              color: #1e1e1e;
-            }
+
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 68px;
+
+            color: #1e1e1e;
+        }
     }
-    // usl finish
-    
+
+    &__list {
+    }
+
+    &__item {
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+
+        color: #1e1e1e;
+    }
+}
+// usl finish
+
 // reviews start
 .reviews {
     &__header {
@@ -722,7 +719,7 @@ body {
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 700;
-                font-size: 56px;
+                font-size: 36px;
                 line-height: 68px;
 
                 color: #1e1e1e;
