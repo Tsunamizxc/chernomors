@@ -1,7 +1,7 @@
 <?php
 
 //Почта администратора, кому будут приходить письма
-define("_ADMIN_EMAIL_", "semen.gnedenkov204@gmail.com");
+define("_ADMIN_EMAIL_", "chernomor.sochi@mail.ru");
 
 /*
  * Настройки почты по умолчанию
