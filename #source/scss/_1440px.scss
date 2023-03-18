@@ -51,7 +51,7 @@ body {
 }
 
 .menu {
-    display: none;
+    display: flex;
     justify-content: space-between;
 }
 .menu-item {
@@ -197,7 +197,7 @@ body {
 }
 // burger-menu start
 .burger__wrapper {
-    display: block;
+    display: none;
 }
 .burger-btn {
     z-index: 200;
@@ -995,11 +995,11 @@ body {
                 border-radius: 15px;
                 font-family: "Montserrat";
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 700;
                 font-size: 12px;
                 line-height: 15px;
 
-                color: #b6b6b6;
+                color: black;
                 padding: 11px 11px;
                 margin-bottom: 10px;
             }
@@ -1026,11 +1026,11 @@ body {
                 border-radius: 15px;
                 font-family: "Montserrat";
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 700;
                 font-size: 12px;
                 line-height: 15px;
 
-                color: #b6b6b6;
+                color: black;
                 padding: 11px 11px;
                 margin-bottom: 10px;
             }
@@ -1057,11 +1057,11 @@ body {
                 border-radius: 15px;
                 font-family: "Montserrat";
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 700;
                 font-size: 12px;
                 line-height: 15px;
 
-                color: #b6b6b6;
+                color: black;
                 padding: 11px 11px;
                 margin-bottom: 10px;
             }
@@ -1088,11 +1088,11 @@ body {
                 border-radius: 15px;
                 font-family: "Montserrat";
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 700;
                 font-size: 12px;
                 line-height: 15px;
 
-                color: #b6b6b6;
+                color: black;
                 padding: 11px 11px;
                 margin-bottom: 15px;
                 option {
@@ -1101,11 +1101,11 @@ body {
                     border-radius: 15px;
                     font-family: "Montserrat";
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 700;
                     font-size: 12px;
                     line-height: 15px;
 
-                    color: #b6b6b6;
+                    color: black;
                     padding: 11px 11px;
                 }
             }

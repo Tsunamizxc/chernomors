@@ -1477,10 +1477,10 @@ swiper-slide img {
   border-radius: 15px;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  color: #b6b6b6;
+  color: black;
   padding: 11px 11px;
   margin-bottom: 10px;
 }
@@ -1508,10 +1508,10 @@ swiper-slide img {
   border-radius: 15px;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  color: #b6b6b6;
+  color: black;
   padding: 11px 11px;
   margin-bottom: 10px;
 }
@@ -1539,10 +1539,10 @@ swiper-slide img {
   border-radius: 15px;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  color: #b6b6b6;
+  color: black;
   padding: 11px 11px;
   margin-bottom: 10px;
 }
@@ -1572,10 +1572,10 @@ swiper-slide img {
   border-radius: 15px;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  color: #b6b6b6;
+  color: black;
   padding: 11px 11px;
   margin-bottom: 15px;
 }
@@ -1588,7 +1588,7 @@ swiper-slide img {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  color: #b6b6b6;
+  color: black;
   padding: 11px 11px;
 }
 
@@ -5445,7 +5445,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
     margin-right: 3px;
   }
   .menu {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -5614,7 +5616,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     }
   }
   .burger__wrapper {
-    display: block;
+    display: none;
   }
   .burger-btn {
     z-index: 200;
@@ -6454,10 +6456,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 10px;
   }
@@ -6485,10 +6487,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 10px;
   }
@@ -6516,10 +6518,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 10px;
   }
@@ -6549,10 +6551,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 15px;
   }
@@ -6562,10 +6564,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
   }
 }
@@ -6618,7 +6620,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
     margin-right: 3px;
   }
   .menu {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -6787,7 +6791,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     }
   }
   .burger__wrapper {
-    display: block;
+    display: none;
   }
   .burger-btn {
     z-index: 200;
@@ -7614,10 +7618,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 10px;
   }
@@ -7645,10 +7649,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 10px;
   }
@@ -7676,10 +7680,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 10px;
   }
@@ -7709,10 +7713,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 15px;
   }
@@ -7722,10 +7726,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
   }
 }
@@ -8751,10 +8755,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 10px;
   }
@@ -8782,10 +8786,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 10px;
   }
@@ -8813,10 +8817,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 10px;
   }
@@ -8846,10 +8850,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     border-radius: 15px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    color: #b6b6b6;
+    color: black;
     padding: 11px 11px;
     margin-bottom: 15px;
   }
